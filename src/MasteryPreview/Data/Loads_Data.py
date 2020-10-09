@@ -1,0 +1,20 @@
+# Loads_Search Data
+Origin_Value = "Atlanta, GA"
+Destination_Value = "Columbus, OH"
+Start_DelDate_Day = "26"
+Start_DelDate_Month = "9"
+Start_DelDate_Year = "2020"
+End_DelDate_Day = "01"
+End_DelDate_Month = "10"
+End_DelDate_Year = "2020"
+
+# Add_Commodities Data
+Active_Status_Value = "Active"
+Change_Activation_Status_Value = "Canceled"
+Mode_Value = "Truck"
+Relation_Value = "Transact"
+QuoteTypeId_Value = "Spot"
+Pickup_Facility_Value = "Coca Cola Facility of Atlanta"
+Delivery_Facility_Value = "Coca Cola Facility of Kansas City"
+Delivery_Value = "Delivery"
+ExpWeight_Value = "900"

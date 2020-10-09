@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.6.8 on win32)" generated="20201008 18:37:42.478" rpa="false">
+<suite id="s1" name="Add Reps To Loads" source="C:\Users\anjali.bangar\PycharmProjects\PreviewPOMSuite\src\MasteryPreview\Test_Cases\Loads\Add_Reps_To_Loads.robot">
+<test id="s1-t1" name="Add Edit and Remove Associated Rep to Load">
+<kw name="Login_Test" library="Login_Keywords">
+<kw name="Launch Application" library="Login_Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20201008 18:37:42.761" level="INFO">Opening browser 'chrome' to base url 'https://molo.preview.masterytms.com/'.</msg>
+<status status="PASS" starttime="20201008 18:37:42.761" endtime="20201008 18:37:49.470"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201008 18:37:49.470" endtime="20201008 18:37:51.676"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${waitTime}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:37:51.676" endtime="20201008 18:37:51.677"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>${waittime}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:37:51.678" endtime="20201008 18:37:51.679"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:37:42.761" endtime="20201008 18:37:51.679"></status>
+</kw>
+<kw name="Verify Landing Page Content" library="Login_Keywords">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${LandingPage}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:37:51.679" endtime="20201008 18:37:51.692"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:37:51.679" endtime="20201008 18:37:51.692"></status>
+</kw>
+<kw name="Click on Login Button" library="Login_Keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${PleaseLogin_Button}</arg>
+</arguments>
+<msg timestamp="20201008 18:37:51.694" level="INFO">Clicking button 'xpath=//button[text()='Login']'.</msg>
+<status status="PASS" starttime="20201008 18:37:51.693" endtime="20201008 18:37:54.985"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${MasteryWebTMS_Text}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:37:54.985" endtime="20201008 18:37:55.005"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:37:51.693" endtime="20201008 18:37:55.005"></status>
+</kw>
+<kw name="Enter Username Password and click on Continue" library="Login_Keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName_TextBox}</arg>
+<arg>${userName}</arg>
+</arguments>
+<msg timestamp="20201008 18:37:55.005" level="INFO">Typing text 'testautomation4@test.test' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20201008 18:37:55.005" endtime="20201008 18:37:56.336"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Password_TextBox}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20201008 18:37:56.336" level="INFO">Typing text '4pBExkEPJXsNW567nuK5XeRF' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20201008 18:37:56.336" endtime="20201008 18:37:56.513"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_Button}</arg>
+</arguments>
+<msg timestamp="20201008 18:37:56.513" level="INFO">Clicking element 'xpath=//span[text()='Log In']'.</msg>
+<status status="PASS" starttime="20201008 18:37:56.513" endtime="20201008 18:37:56.574"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:37:55.005" endtime="20201008 18:37:56.574"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:37:42.761" endtime="20201008 18:37:56.574"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.1 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:37:56.574" endtime="20201008 18:37:56.574"></status>
+</kw>
+<kw name="Select Search Loads from Header" library="Loads_Common_Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${header_loads_element}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:37:56.574" endtime="20201008 18:38:04.370"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${header_loads_element}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:04.370" level="INFO">Clicking element 'xpath=//button[.='Loads']'.</msg>
+<status status="PASS" starttime="20201008 18:38:04.370" endtime="20201008 18:38:04.698"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${search_loads_element}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:04.826" level="INFO">Current page contains element 'xpath=//a[@data-testid='nav-link-load-search' and .='Search']'.</msg>
+<status status="PASS" starttime="20201008 18:38:04.698" endtime="20201008 18:38:04.826"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${search_loads_element}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:04.826" level="INFO">Clicking element 'xpath=//a[@data-testid='nav-link-load-search' and .='Search']'.</msg>
+<status status="PASS" starttime="20201008 18:38:04.826" endtime="20201008 18:38:05.131"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${search_loads_text}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:05.131" endtime="20201008 18:38:05.450"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${search_loads_text}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:05.666" level="INFO">Current page contains text 'Load Search Results'.</msg>
+<status status="PASS" starttime="20201008 18:38:05.450" endtime="20201008 18:38:05.666"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:37:56.574" endtime="20201008 18:38:05.666"></status>
+</kw>
+<kw name="Search Loads by Shipper Name" library="Loads_Common_Keywords">
+<arguments>
+<arg>${shipper_value}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${shipper_element}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:05.666" endtime="20201008 18:38:05.790"></status>
+</kw>
+<kw name="Input and Select Value from Autopopulate Dropdown" library="Common_Keywords">
+<arguments>
+<arg>${shipper_element}</arg>
+<arg>${Shipper_Name}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Input_Element}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:05.790" endtime="20201008 18:38:05.894"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_Element}</arg>
+<arg>${Dropdown_Value_TBS}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:05.894" level="INFO">Typing text 'Coca Cola Facility of Atlanta' into text field 'name=facility-Pickup'.</msg>
+<status status="PASS" starttime="20201008 18:38:05.894" endtime="20201008 18:38:06.371"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${Select_Dropdown_Value}</arg>
+<arg>ValueToBeSelected</arg>
+<arg>${Dropdown_Value_TBS}</arg>
+</arguments>
+<assign>
+<var>${Select_Value_From_Dropdown}</var>
+</assign>
+<msg timestamp="20201008 18:38:06.371" level="INFO">${Select_Value_From_Dropdown} = xpath=//li[contains(.,'Coca Cola Facility of Atlanta')]</msg>
+<status status="PASS" starttime="20201008 18:38:06.371" endtime="20201008 18:38:06.371"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Select_Value_From_Dropdown}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:06.371" endtime="20201008 18:38:07.595"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Select_Value_From_Dropdown}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:07.595" level="INFO">Clicking element 'xpath=//li[contains(.,'Coca Cola Facility of Atlanta')]'.</msg>
+<status status="PASS" starttime="20201008 18:38:07.595" endtime="20201008 18:38:07.864"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:38:05.790" endtime="20201008 18:38:07.864"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${search_loads_button}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:07.864" endtime="20201008 18:38:08.212"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${search_loads_button}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:08.212" level="INFO">Clicking element 'xpath=//button[.='Search']'.</msg>
+<status status="PASS" starttime="20201008 18:38:08.212" endtime="20201008 18:38:08.982"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${list_of_loads}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:08.982" endtime="20201008 18:38:11.147"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${load_num_link}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:11.147" level="INFO">Clicking element 'xpath=//div[@data-cellheader='Load #']//a'.</msg>
+<status status="PASS" starttime="20201008 18:38:11.147" endtime="20201008 18:38:11.466"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:38:05.666" endtime="20201008 18:38:11.466"></status>
+</kw>
+<kw name="Expand Load Details" library="Loads_Common_Keywords">
+<arguments>
+<arg>${expand_order_details}</arg>
+</arguments>
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>Selects browser window matching ``locator``.</doc>
+<arguments>
+<arg>NEW</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:11.466" endtime="20201008 18:38:11.932"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201008 18:38:11.932" endtime="20201008 18:38:14.197"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${hide_operational_details_button}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:14.197" endtime="20201008 18:38:17.640"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${hide_operational_details_button}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:17.643" level="INFO">Clicking element 'xpath=//button[@title='Hide Operational Details']'.</msg>
+<status status="PASS" starttime="20201008 18:38:17.640" endtime="20201008 18:38:19.277"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Expand_Details}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:19.277" endtime="20201008 18:38:19.553"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Expand_Details}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:19.553" level="INFO">Clicking element 'xpath=//section[@data-testid='load-pane-orders']//div[@data-cellheader='Additional Info']//button[@data-testid='row-expand']//*[name()='svg' and @data-icon='angle-down']'.</msg>
+<status status="PASS" starttime="20201008 18:38:19.553" endtime="20201008 18:38:21.231"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:38:11.466" endtime="20201008 18:38:21.231"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${associated_reps_table}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:21.231" endtime="20201008 18:38:21.498"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${add_reps_button}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:21.498" level="INFO">Clicking element 'xpath=//div[@data-testid='order-reps']//div[.='Associated Reps']//button'.</msg>
+<status status="PASS" starttime="20201008 18:38:21.498" endtime="20201008 18:38:21.966"></status>
+</kw>
+<kw name="Input and Select Value from Autopopulate Dropdown" library="Common_Keywords">
+<arguments>
+<arg>${add_reps_name_element}</arg>
+<arg>${reps_name}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Input_Element}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:21.966" endtime="20201008 18:38:22.093"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_Element}</arg>
+<arg>${Dropdown_Value_TBS}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:22.093" level="INFO">Typing text 'Kelsey Bozick' into text field 'xpath=//div[@class='css-1a3spi6']//input[@placeholder='Search employees']'.</msg>
+<status status="PASS" starttime="20201008 18:38:22.093" endtime="20201008 18:38:22.645"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${Select_Dropdown_Value}</arg>
+<arg>ValueToBeSelected</arg>
+<arg>${Dropdown_Value_TBS}</arg>
+</arguments>
+<assign>
+<var>${Select_Value_From_Dropdown}</var>
+</assign>
+<msg timestamp="20201008 18:38:22.645" level="INFO">${Select_Value_From_Dropdown} = xpath=//li[contains(.,'Kelsey Bozick')]</msg>
+<status status="PASS" starttime="20201008 18:38:22.645" endtime="20201008 18:38:22.645"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Select_Value_From_Dropdown}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:22.645" endtime="20201008 18:38:23.514"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Select_Value_From_Dropdown}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:23.514" level="INFO">Clicking element 'xpath=//li[contains(.,'Kelsey Bozick')]'.</msg>
+<status status="PASS" starttime="20201008 18:38:23.514" endtime="20201008 18:38:23.770"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:38:21.966" endtime="20201008 18:38:23.770"></status>
+</kw>
+<kw name="Select Value from Dropdown" library="Common_Keywords">
+<arguments>
+<arg>${reps_type_dd}</arg>
+<arg>${reps_type_value}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Dropdown_Element}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:23.770" endtime="20201008 18:38:23.898"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Dropdown_Element}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:23.898" level="INFO">Clicking element 'name=typeId'.</msg>
+<status status="PASS" starttime="20201008 18:38:23.898" endtime="20201008 18:38:24.345"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${Select_Dropdown_Value}</arg>
+<arg>ValueToBeSelected</arg>
+<arg>${Dropdown_Value_TBS}</arg>
+</arguments>
+<assign>
+<var>${Select_Value_From_Dropdown}</var>
+</assign>
+<msg timestamp="20201008 18:38:24.345" level="INFO">${Select_Value_From_Dropdown} = xpath=//li[contains(.,'Customer Ops')]</msg>
+<status status="PASS" starttime="20201008 18:38:24.345" endtime="20201008 18:38:24.345"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Select_Value_From_Dropdown}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:24.345" endtime="20201008 18:38:24.585"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Select_Value_From_Dropdown}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:24.585" level="INFO">Clicking element 'xpath=//li[contains(.,'Customer Ops')]'.</msg>
+<status status="PASS" starttime="20201008 18:38:24.585" endtime="20201008 18:38:24.880"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:38:23.770" endtime="20201008 18:38:24.880"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${main_checkbox}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:24.896" level="INFO">Clicking element 'xpath=//input[@name='main']//parent::label/span'.</msg>
+<status status="PASS" starttime="20201008 18:38:24.896" endtime="20201008 18:38:25.212"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${save_reps_button}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:25.212" level="INFO">Clicking element 'xpath=//button[@data-testid='dialog-confirm']'.</msg>
+<status status="PASS" starttime="20201008 18:38:25.212" endtime="20201008 18:38:26.842"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${added_reps}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:26.970" level="INFO">Current page contains element 'xpath=//div[@data-testid='order-reps']//div[@data-cellheader='Rep' and @title='Kelsey Bozick']'.</msg>
+<status status="PASS" starttime="20201008 18:38:26.842" endtime="20201008 18:38:26.970"></status>
+</kw>
+<kw name="Delete Menu Item" library="Common_Keywords">
+<arguments>
+<arg>${delete_rep_menu_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Delete_Menu_Button}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:26.970" level="INFO">Clicking element 'xpath=//div[@title='Kelsey Bozick']//parent::div/div[@data-cellheader='Menu']/button'.</msg>
+<status status="PASS" starttime="20201008 18:38:26.970" endtime="20201008 18:38:27.264"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns value of ``attribute`` from element ``locator``.</doc>
+<arguments>
+<arg>${Delete_Menu_Button}</arg>
+<arg>id</arg>
+</arguments>
+<assign>
+<var>${idValue}</var>
+</assign>
+<msg timestamp="20201008 18:38:27.496" level="INFO">${idValue} = menu-button--menu--1457</msg>
+<status status="PASS" starttime="20201008 18:38:27.264" endtime="20201008 18:38:27.496"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:27.496" endtime="20201008 18:38:27.717"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']//div[contains(text(),'Delete')]</arg>
+</arguments>
+<msg timestamp="20201008 18:38:27.717" level="INFO">Clicking element 'xpath=//reach-portal//div//div[@aria-labelledby='menu-button--menu--1457']//div[contains(text(),'Delete')]'.</msg>
+<status status="PASS" starttime="20201008 18:38:27.717" endtime="20201008 18:38:27.970"></status>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>ACCEPT</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:27.970" endtime="20201008 18:38:29.006"></status>
+</kw>
+<status status="PASS" starttime="20201008 18:38:26.970" endtime="20201008 18:38:29.006"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${save_order_button}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:29.006" level="INFO">Clicking element 'xpath=//button[.='Save' and @data-testid='load-order-save']'.</msg>
+<status status="PASS" starttime="20201008 18:38:29.006" endtime="20201008 18:38:30.740"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${success_toast}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:30.740" endtime="20201008 18:38:33.738"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${expand_order_details}</arg>
+</arguments>
+<status status="PASS" starttime="20201008 18:38:33.738" endtime="20201008 18:38:33.970"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${expand_order_details}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:33.970" level="INFO">Clicking element 'xpath=//section[@data-testid='load-pane-orders']//div[@data-cellheader='Additional Info']//button[@data-testid='row-expand']//*[name()='svg' and @data-icon='angle-down']'.</msg>
+<status status="PASS" starttime="20201008 18:38:33.970" endtime="20201008 18:38:34.921"></status>
+</kw>
+<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${added_reps}</arg>
+</arguments>
+<msg timestamp="20201008 18:38:55.058" level="INFO">Current page does not contain element 'xpath=//div[@data-testid='order-reps']//div[@data-cellheader='Rep' and @title='Kelsey Bozick']'.</msg>
+<status status="PASS" starttime="20201008 18:38:34.921" endtime="20201008 18:38:55.058"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201008 18:38:55.058" endtime="20201008 18:38:57.621"></status>
+</kw>
+<doc>As a user I can add edit and remove associated Rep to Load</doc>
+<tags>
+<tag>Regression Test Suite</tag>
+</tags>
+<status status="PASS" starttime="20201008 18:37:42.761" endtime="20201008 18:38:57.621" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201008 18:37:42.478" endtime="20201008 18:38:57.625"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Regression Test Suite</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Add Reps To Loads">Add Reps To Loads</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,12 @@
+BROWSER = "chrome"
+URL = "https://molo.preview.masterytms.com/"
+waitTime = "20 seconds"
+LandingPage = "Please log in"
+PleaseLogin_Button = "xpath=//button[text()='Login']"
+
+userName = "testautomation4@test.test"
+password = "4pBExkEPJXsNW567nuK5XeRF"
+UserName_TextBox = "name=email"
+Password_TextBox = "name=password"
+MasteryWebTMS_Text = "Mastery Web TMS"
+Login_Button = "xpath=//span[text()='Log In']"
