@@ -24,12 +24,7 @@ Add Edit and Remove Associated Rep to Load
     wait until element is visible  ${associated_reps_table}
     click element  ${add_reps_button}
     input and select value from autopopulate dropdown  ${add_reps_name_element}  ${reps_name}
-#    wait until element is visible  ${reps_name_dd}
-#    press keys  ${add_reps_name_element}  ENTER
     select value from dropdown  ${reps_type_dd}  ${reps_type_value}
-#    click element  ${reps_type_dd}
-#    wait until element is visible  ${reps_type_value_tbs}
-#    click element  ${reps_type_value_tbs}
     click element  ${main_checkbox}
     click element  ${save_reps_button}
     page should contain element  ${added_reps}

@@ -1,71 +1,59 @@
+Search_Loads_Text = 'Load Search Results'
+
 # Numbers Section:
 Ref_Num_Element = "name=ref"
-Ref_Num_Value = "55555"
-Load_Num_Link = "xpath=//div[@data-cellheader='Load #']//a"
-Verify_Ref_Num = f"xpath=//div[@data-testid='order-refs']//div[@data-cellheader='Ref #' and contains(@title,'{Ref_Num_Value}')]"
 Route_Num_Element = 'name=routeCode'
-Route_Num_Value = "10000006"
-Verify_Route_Num = f"xpath=//div[@data-cellheader='Route #' and starts-with(@title,'{Route_Num_Value}')]"
 Order_Num_Element = "name=orderCode"
-Order_Num_Value = "10000005"
-Verify_Order_Num = f"xpath=//div[@data-cellheader='Order #' and starts-with(@title,'{Order_Num_Value}')]"
 Load_Num_Element = "name=loadCode"
-Load_Num_Value = "10000007"
-Verify_Load_Num = f"xpath=//div[@data-cellheader='Load #' and starts-with(@title,'{Load_Num_Value}')]"
+Load_Num_Link = "xpath=//div[@data-cellheader='Load #']//a"
+
+# Verify_Ref_Num = f"xpath=//div[@data-testid='order-refs']//div[@data-cellheader='Ref #' and contains(@title,'{Ref_Num_Value}')]"
+# Verify_Route_Num = f"xpath=//div[@data-cellheader='Route #' and starts-with(@title,'{Route_Num_Value}')]"
+# Verify_Order_Num = f"xpath=//div[@data-cellheader='Order #' and starts-with(@title,'{Order_Num_Value}')]"
+# Verify_Load_Num = f"xpath=//div[@data-cellheader='Load #' and starts-with(@title,'{Load_Num_Value}')]"
 
 # Pick-Up Section:
 Shipper_Element = "name=facility-Pickup"
-Shipper_Value = "Coca Cola Facility of Atlanta"
 Shipper_DD = "xpath=//input[@name='facility-Pickup']//parent::div//following-sibling::ul"
-Verify_Shipper = f"xpath=//div[@data-cellheader='Shipper' and contains(@title,'{Shipper_Value}')]"
 PU_Date_Element = "name=PickupAvailableStartDate"
-PickUp_Day_TBS = "14"
-PickUp_Month_TBS = "9"
-PickUp_Year_TBS = "2020"
 End_PuDate_Element = "name=PickupAvailableEndDate"
-End_PickUp_Day_TBS = "16"
-End_PickUp_Month_TBS = "9"
-End_PickUp_Year_TBS = "2020"
 Origin_City_Element = "xpath=//div[@id='Pickup-address']//input"
 Origin_State_Element = "xpath=//div[.='Pick Up']//parent::div//label[.='State']//following-sibling::button"
 Origin_State_Search_Field = "xpath=//div[.='Pick Up']//parent::div//label[.='State']//following-sibling::div//input[@aria-autocomplete='list']"
-GA_Value = "GA"
-OH_Value = "OH"
-GA_State_CheckBox = f"xpath=//div//label[.='State']//following-sibling::div//div[.='{GA_Value}']//preceding-sibling::label//input"
-OH_State_CheckBox = f"xpath=//div//label[.='State']//following-sibling::div//div[.='{OH_Value}']//preceding-sibling::label//input"
-Select_GA_State = f"xpath=//li[contains(.,'{GA_Value}')]"
-Select_OH_State = f"xpath=//li[contains(.,'{OH_Value}')]"
-Verify_GA_OH_State = f"xpath=//div[@data-cellheader='OST' and (@title='{GA_Value}' or @title='{OH_Value}')]"
 PickUp_Radius_Element = "id=Pickup-radius"
-Radius_Value = "30"
+
+# Verify_Shipper = f"xpath=//div[@data-cellheader='Shipper' and contains(@title,'{Shipper_Value}')]"
+# GA_State_CheckBox = f"xpath=//div//label[.='State']//following-sibling::div//div[.='{GA_Value}']//preceding-sibling::label//input"
+# OH_State_CheckBox = f"xpath=//div//label[.='State']//following-sibling::div//div[.='{OH_Value}']//preceding-sibling::label//input"
+# Select_GA_State = f"xpath=//li[contains(.,'{GA_Value}')]"
+# Select_OH_State = f"xpath=//li[contains(.,'{OH_Value}')]"
+# Verify_GA_OH_State = f"xpath=//div[@data-cellheader='OST' and (@title='{GA_Value}' or @title='{OH_Value}')]"
 
 # Delivery Section:
 Consignee_Element = "name=facility-Delivery"
-Consignee_Value = "Coca Cola Facility of Austin"
-Verify_Consignee = f"xpath=//div[@data-cellheader='Consignee' and @title='{Consignee_Value}']"
 Start_DelDate_Element = "name=DeliveryAvailableStartDate"
 End_DelDate_Element = "name=DeliveryAvailableEndDate"
 Destination_Element = "xpath=//div[@id='Delivery-address']//input"
 Destination_State_Element = "xpath=//div[.='Destination']//parent::div//label[.='State']//following-sibling::button"
 Destination_State_Search_Field = "xpath=//div[.='Destination']//parent::div//label[.='State']//following-sibling::div//input[@aria-autocomplete='list']"
-Verify_Destination_GA_OH_State = f"xpath=//div[@data-cellheader='DST' and (@title='{GA_Value}' or @title='{OH_Value}')]"
 Delivery_Radius_Element = "name=Delivery-radius"
+
+# Verify_Consignee = f"xpath=//div[@data-cellheader='Consignee' and @title='{Consignee_Value}']"
+# Verify_Destination_GA_OH_State = f"xpath=//div[@data-cellheader='DST' and (@title='{GA_Value}' or @title='{OH_Value}')]"
 
 # Customer Section:
 Customer_Search_Element = "xpath=//div[@data-testid='customer-search']//input"
-Customer_Value = "Coca Cola Bottling of Northern New England"
-Verify_Customer = f"xpath=//div[@data-cellheader='Customer' and @title='{Customer_Value}']"
 Customer_Rep_Element = "xpath=//div[@id='customer-rep']//input"
-Customer_Rep_Value = "Kelsey Bozick"
-Verify_Customer_Reps = f"xpath=//div[@data-testid='order-reps']//div[@data-cellheader='Rep' and @title='{Customer_Rep_Value}']"
+
+# Verify_Customer = f"xpath=//div[@data-cellheader='Customer' and @title='{Customer_Value}']"
+# Verify_Customer_Reps = f"xpath=//div[@data-testid='order-reps']//div[@data-cellheader='Rep' and @title='{Customer_Rep_Value}']"
 
 # Carrier Section:
 Carrier_Element = "xpath=//div[@data-testid='carrier-search']//input"
-Carrier_Value = "Yolo Transport Llc"  #Blue Line Distribution Ltd.
-Verify_Carrier_Value = f"xpath=//a[.='{Carrier_Value}']"
 Carrier_Rep_Element = "xpath=//div[@id='carrier-rep']//input"
-Carrier_Rep_Value = "Derrick Davis"  #Jessica Brady  #Kelsey Bozick
-Verify_Carrier_Reps = f"xpath=//div[@data-testid='route-reps']//div[@data-cellheader='Rep' and @title='{Carrier_Rep_Value}']"
+
+# Verify_Carrier_Value = f"xpath=//a[.='{Carrier_Value}']"
+# Verify_Carrier_Reps = f"xpath=//div[@data-testid='route-reps']//div[@data-cellheader='Rep' and @title='{Carrier_Rep_Value}']"
 
 # Route Details Section:
 RAS_Element = "xpath=//label[.='RAS']//following-sibling::div//button"
@@ -82,8 +70,11 @@ Select_Cancelled_RAS = "xpath=//li[.='Cancelled']"
 Select_Incomplete_RAS = "xpath=//li[.='Incomplete']"
 Select_None_RAS = "xpath=//li[.='None']"
 
+Search_Loads_Button = "xpath=//button[.='Search']"
+Clear_Search_Button = "xpath=//button[.='Clear Search']"
+
 # Sort Section:
-List_Of_Loads = "css:.css-nb1hra"
+List_Of_Loads = "xpath=//div[@data-testid='table-tbody']//div[@role='row']"
 Sort_Load_By_Load_Num = "css:div[data-testid='load-search-table'] [title='Sort by Load #']"
 Sort_Load_By_Load_Num_ASC = "css:div[data-testid='load-search-table'] [title='Sort by Load #'] .fa-caret-up"
 Sort_Load_By_Load_Num_DSC = "css:div[data-testid='load-search-table'] [title='Sort by Load #'] .fa-caret-down"

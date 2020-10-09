@@ -5,57 +5,14 @@ Library  String
 Resource  ../../Keywords/Login_Keywords.robot
 Resource  ../../Keywords/Common_Keywords.robot
 Resource  ../../Keywords/Loads_Common_Keywords.robot
+Resource  ../../Keywords/Loads_Search_Keywords.robot
 Variables  ../../Page_Objects/Load_Search_Locators.py
 Variables  ../../Page_Objects/Loads_Common_Locators.py
 Variables  ../../Page_Objects/Common_Locators.py
 Variables  ../../Data/Loads_Data.py
 
 *** Keywords ***
-Verify Origin City
-    @{originCityState}=  split string  ${origin_value}  ,${SPACE}
-    wait until element is visible  xpath=//div[@data-cellheader='Origin City' and contains(@title,'${originCityState[0]}')]
-    page should contain element  xpath=//div[@data-cellheader='Origin City' and contains(@title,'${originCityState[0]}')]
-    wait until element is visible  xpath=//div[@data-cellheader='OST' and contains(@title,'${originCityState[1]}')]
-    page should contain element  xpath=//div[@data-cellheader='OST' and contains(@title,'${originCityState[1]}')]
 
-Verify Destination City
-    @{destinationCityState}=  split string  ${destination_value}  ,${SPACE}
-    wait until element is visible  xpath=//div[@data-cellheader='Dest City' and contains(@title,'${destinationCityState[0]}')]
-    page should contain element  xpath=//div[@data-cellheader='Dest City' and contains(@title,'${destinationCityState[0]}')]
-    wait until element is visible  xpath=//div[@data-cellheader='DST' and contains(@title,'${destinationCityState[1]}')]
-    page should contain element  xpath=//div[@data-cellheader='DST' and contains(@title,'${destinationCityState[1]}')]
-
-Deselect RAS Values
-    click element  ${ras_element}
-    deselect value from dropdown if checkbox is checked  ${active_checkbox}  ${select_active_ras}
-    deselect value from dropdown if checkbox is checked  ${hold_checkbox}  ${select_hold_ras}
-    deselect value from dropdown if checkbox is checked  ${uncommitted_checkbox}  ${select_uncommitted_ras}
-    deselect value from dropdown if checkbox is checked  ${cancelled_checkbox}  ${select_cancelled_ras}
-    deselect value from dropdown if checkbox is checked  ${incomplete_checkbox}  ${select_incomplete_ras}
-    deselect value from dropdown if checkbox is checked  ${none_checkbox}  ${select_none_ras}
-
-Sort Load Results
-    [Arguments]  ${Sort_Load_Column_Name}  ${Asc_Sort_Symbol}  ${Desc_Sort_Symbol}
-    click element  ${Sort_Load_Column_Name}
-    wait until element is visible  ${Asc_Sort_Symbol}
-    page should contain element  ${Asc_Sort_Symbol}
-    wait until element is visible  ${list_of_loads}
-    click element  ${Sort_Load_Column_Name}
-    wait until element is visible  ${Desc_Sort_Symbol}
-    page should contain element  ${Desc_Sort_Symbol}
-    wait until element is visible  ${list_of_loads}
-    click element  ${Sort_Load_Column_Name}
-    wait until element is visible  ${list_of_loads}
-
-Click Search Load Button
-    wait until element is enabled  ${search_loads_button}
-    click element  ${search_loads_button}
-    
-Clear Load Search Results
-    wait until element is visible  ${clear_search_button}
-    click element  ${clear_search_button}
-    wait until element is not visible  ${list_of_loads}
-    
 *** Test Cases ***
 #Load Search: TA-554
 Load Search using All Search Paramters
@@ -63,13 +20,9 @@ Load Search using All Search Paramters
     [Tags]  Regression Test Suite
     Login_Test
 
-    #Below line added only to view the Test case Flow properly. As per your requirement you can change time to wait after each step.set selenium speed
-    set selenium speed  0.1 seconds
-
     #Step-1: Navigate to load search
-    select search loads from header
-    wait until element is visible  ${open_close_sidebar_button}
-    click element  ${open_close_sidebar_button}
+    Select Search Loads from Header
+
 
     #Step-2: Search by Ref #
     Deselect RAS Values

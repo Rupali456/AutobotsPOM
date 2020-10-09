@@ -20,8 +20,10 @@ Verify_OrderNotes = f"xpath=//section[@data-testid='load-pane-orders']//textarea
 Add_Commodities_Icon = "xpath=//div[@data-testid='order-commodities']//button[@data-testid='table-add-new']"
 Commodities_Modal = "xpath=//div[@role='dialog']"
 Freight_Description_Element = "name=description"
+Freight_Description_Value = "Coca cola"
 ExpWeight_Element = "name=expectedWeight.value"
 Save_Commodity_Button = "xpath=//button[.='Save Commodity']"
+Verify_Saved_Commodities = f"xpath=//div[@data-testid='order-commodities']//div[@data-cellheader='Freight Description' and .='{Freight_Description_Value}']"
 # Requirements
 Requirements_Table = "xpath=//div[@data-testid='table-requirements']"
 Add_Requirements_Icon = "xpath=//div[@data-testid='table-requirements']//button[@class='css-1y4ltxc']"
@@ -38,7 +40,6 @@ Verify_Hazmat_Requirement = "xpath=//div[@data-testid='table-requirements']//div
 Associated_Reps_Table = "xpath=//div[@data-testid='order-reps']//div[.='Associated Reps']"
 Add_Reps_Button = "xpath=//div[@data-testid='order-reps']//div[.='Associated Reps']//button"
 Add_Reps_Name_Element = "xpath=//div[@class='css-1a3spi6']//input[@placeholder='Search employees']"
-# Reps_Name_DD = "xpath=//strong[.='${Reps_Name}']"
 Reps_Type_DD = "name=typeId"
 Main_CheckBox = "xpath=//input[@name='main']//parent::label/span"
 Save_Reps_Button = "xpath=//button[@data-testid='dialog-confirm']"
@@ -58,9 +59,39 @@ Edit_Delivery_Menu_Button = "xpath=//div[@data-testid='load-pane-stops']//div[co
 Add_Stop_Icon = "xpath=//button[@data-testid='btn-new-stop' and contains(text(),'Add Stop')]"
 Select_Facility_Element = "xpath=//input[@name='facility-search']"
 Select_Facility_Text = "xpath=//div[@data-testid='load-step-add-stop-details']//div[@data-card-title='true' and .='Select Facility']"
+Pickup_Facility_Value = "Coca Cola Facility of Atlanta"  #Arian's Beverage Depot
+Select_Pickup_Facility_Value = f"""xpath=//li[contains(.,"{Pickup_Facility_Value}")]"""
+Verify_Pickup = f"""xpath=//a[.="{Pickup_Facility_Value}"]"""
+Delivery_Facility_Value = "Coca Cola Facility of Kansas City"  #Beverage Depot
+Select_Delivery_Facility_Value = f"""xpath=//li[contains(.,"{Delivery_Facility_Value}")]"""
+Verify_Delivery = f"""xpath=//a[.="{Delivery_Facility_Value}"]"""
+Verify_Pickup_Stop = f"""xpath=//div[@data-cellheader='Type' and @title='Pickup']//following-sibling::div[@data-cellheader='Facility']//span[.="{Pickup_Facility_Value}"]"""
+Verify_Delivery_Stop = f"""xpath=//div[@data-cellheader='Type' and @title='Delivery']//following-sibling::div[@data-cellheader='Facility']//span[.="{Delivery_Facility_Value}"]"""
 Select_Date = "xpath=//input[contains(@name,'availableEnd.value')]"
 Pickup_Delivery_Element = "xpath=//div[contains(@name,'type')]//button"
 Todays_Date = "xpath=//div[contains(@class,'today')]"
+Schedule_Type_Element = "xpath=//div[contains(@name,'scheduleType')]//button"
+Open_Schedule_Value = "Open"
+# Select_Open_Schedule_Value = xpath=//li[.='${Open_Schedule_Value}']
+Notice_Schedule_Value = "Notice"
+# Select_Notice_Schedule_Value = xpath=//li[.='${Notice_Schedule_Value}']
+LiveDrop_Element = "xpath=//div[contains(@name,'liveType')]//button"
+DropOnly_Value = "Drop Only"
+# Select_DropOnly_Value = xpath=//li[.='${DropOnly_Value}']
+DropAvail_Value = "Drop Avail"
+# Select_DropAvail_Value = xpath=//li[.='${DropAvail_Value}']
+WorkType_Value = "xpath=//div[contains(@name,'workType')]//button"
+Lumper_Value = "Lumper"
+# Select_Lumper_Value = xpath=//li[.='${Lumper_Value}']
+NoTouch_Value = "No Touch"
+# Select_NoTouch_Value = xpath=//li[.='${NoTouch_Value}']
+LoadFrom_Element = "xpath=//div[contains(@name,'loadFromId')]//button"
+SideOnly_Value = "Side Only"
+# Select_SideOnly_Value = xpath=//li[.='${SideOnly_Value}']
+TailOnly_Value = "Tail Only"
+# Select_TailOnly_Value = xpath=//li[.='${TailOnly_Value}']
+StopNotes_Element = "xpath=//textarea[contains(@data-testid,'field-stop-note')]"
+StopNotes_Value = "Test Stop Notes"
 # Commodities
 Add_Stop_Commodities_Icon = "xpath=//div[@data-testid='stop-commodities']//button[@data-testid='table-add-new']"
 Select_Commodity_Element = "xpath=//div[@data-testid='commodity-for-stop-select']//button"
@@ -77,5 +108,10 @@ Select_Cola_Commodity = f"xpath=//li[contains(.,'{Cola_Commodity_Value}')]"
 Select_Coffee_Commodity = f"xpath=//li[contains(.,'{Coffee_Commodity_Value}')]"
 Select_Syrup_Commodity = f"xpath=//li[contains(.,'{Syrup_Commodity_Value}')]"
 Select_CarbonatedCylinder_Commodity = f"xpath=//li[contains(.,'{CarbonatedCylinder_Commodity_Value}')]"
+Select_StopCommodities = "xpath=//li[.='{Freight_Description_Value}']"
+# Save_StopCommodities = xpath=//div[.="Add New Commodities"]//following-sibling::div//button[.='Add Commodities']
+#
+# ${Delete_Pickup_Stop = xpath=//div[@data-testid='load-pane-stops']//div[@data-cellheader='Facility' and .='${Pickup_Facility_Value}']//preceding-sibling::div[@data-cellheader='Menu']//button
+# ${Delete_Delivery_Stop = xpath=//div[@data-testid='load-pane-stops']//div[@data-cellheader='Facility' and .='${Delivery_Facility_Value}']//preceding-sibling::div[@data-cellheader='Menu']//button
 
 Save_Stop_Button = "xpath=//button[@data-testid='load-stop-save' and .='Save']"
