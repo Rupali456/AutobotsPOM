@@ -223,3 +223,79 @@ Addresses_Type_Column = "xpath=//div[@data-testid='addresses-table']//div[@data-
 Addresses_Address_Column = "xpath=//div[@data-testid='addresses-table']//div[@data-thid='Address']"
 Addresses_Location_Column = "xpath=//div[@data-testid='addresses-table']//div[@data-thid='Location']"
 Addresses_Main_Column = "xpath=//div[@data-testid='addresses-table']//div[@data-thid='Main']"
+
+# Customer_Contact_Table.robot
+# Contact Section:
+Add_Contact_Button = "xpath=//div[@data-testid='contacts-table']//button[@class='css-1y4ltxc']"
+List_of_Contact = "xpath=//div[@data-testid='contacts-table']//div[@class='css-1ti4inv']"
+Contact_Modal = "xpath=//div[.='Add New Contact']"
+Contact_Name_Element = "xpath=//div[contains(text(),'Contact')]//parent::div//input[@name='name']"
+Contact_Type_Element = "xpath=//div[@name='contactTypeId']//button"
+Contact_Type_DD = "css:.css-tc5f3h"
+Contact_Phone_Element = "xpath=//div[contains(text(),'Contact')]//parent::div//input[@name='phoneNumber']"
+Extension_Element = "xpath=//div[contains(text(),'Contact')]//parent::div//input[@name='extension']"
+FaxNumber_Element = "xpath=//div[contains(text(),'Contact')]//parent::div//input[@name='faxNumber']"
+Email_Element = "xpath=//div[contains(text(),'Contact')]//parent::div//input[@name='emailAddress']"
+IM_Service_Element = "xpath=//div[@name='chatTypeId']//button"
+IM_Service_DD = "css:.css-tc5f3h"
+IM_User_element = "xpath=//div[contains(text(),'Contact')]//parent::div//input[@name='chatUsername']"
+Contact_Main_Checkbox = "css:.css-d3mwxx"
+Save_Contact_Button = "xpath=//button[@class='css-1p16kem' and contains(text(),'Contact')]"
+
+Contact_Type_Value = "Billing"
+Contact_Type_Value_TBS = f"xpath=//li[.='{Contact_Type_Value}']"
+IM_Service_Value = "Skype"
+IM_Service_Value_TBS = f"xpath=//li[.='{IM_Service_Value}']"
+
+# Edit Contact Section :
+Edit_Contact_Type = "Billing"
+Edit_Contact_Menu_Button = f"xpath=//div[@data-testid='contacts-table']//div[@title='{Edit_Contact_Type}']//parent::div/div[@data-cellheader='Menu']/button"
+Delete_Contact_Type = "Other"
+Delete_Contact_Menu_Button = f"xpath=//div[@data-testid='contacts-table']//div[@title='{Delete_Contact_Type}']//parent::div/div[@data-cellheader='Menu']/button"
+Edit_Contact_Type_Value = "Other"
+Edit_Contact_Type_TBS = f"xpath=//li[.='{Edit_Contact_Type_Value}']"
+Edit_IM_Service_Value = "Skype"
+Edit_IM_Service_TBS = f"xpath=//li[.='{Edit_IM_Service_Value}']"
+
+# Sort Contacts Section:
+List_Of_Contacts = "css:div[data-testid='contacts-table'] .css-1ti4inv"
+Sort_Contact_By_Type = "css:div[data-testid='contacts-table'] [title='Sort by Type']"
+Sort_Contact_By_Type_ASC = "css:div[data-testid='contacts-table'] [title='Sort by Type'] .fa-caret-up"
+Sort_Contact_By_Type_DSC =  "css:div[data-testid='contacts-table'] [title='Sort by Type'] .fa-caret-down"
+
+Sort_Contact_By_Main = "css:div[data-testid='contacts-table'] [title='Sort by Main']"
+Sort_Contact_By_Main_ASC = "css:div[data-testid='contacts-table'] [title='Sort by Main'] .fa-caret-up"
+Sort_Contact_By_Main_DSC = "css:div[data-testid='contacts-table'] [title='Sort by Main'] .fa-caret-down"
+
+Sort_Contact_By_Name = "css:div[data-testid='contacts-table'] [title='Sort by Name']"
+Sort_Contact_By_Name_ASC = "css:div[data-testid='contacts-table'] [title='Sort by Name'] .fa-caret-up"
+Sort_Contact_By_Name_DSC = "css:div[data-testid='contacts-table'] [title='Sort by Name'] .fa-caret-down"
+
+Sort_Contact_By_Phone = "css:div[data-testid='contacts-table'] [title='Sort by Phone']"
+Sort_Contact_By_Phone_ASC = "css:div[data-testid='contacts-table'] [title='Sort by Phone'] .fa-caret-up"
+Sort_Contact_By_Phone_DSC = "css:div[data-testid='contacts-table'] [title='Sort by Phone'] .fa-caret-down"
+
+Sort_Contact_By_Ext = "css:div[data-testid='contacts-table'] [title='Sort by Ext']"
+Sort_Contact_By_Ext_ASC = "css:div[data-testid='contacts-table'] [title='Sort by Ext'] .fa-caret-up"
+Sort_Contact_By_Ext_DSC =  "css:div[data-testid='contacts-table'] [title='Sort by Ext'] .fa-caret-down"
+
+Sort_Contact_By_Email = "css:div[data-testid='contacts-table'] [title='Sort by Email']"
+Sort_Contact_By_Email_ASC = "css:div[data-testid='contacts-table'] [title='Sort by Email'] .fa-caret-up"
+Sort_Contact_By_Email_DSC = "css:div[data-testid='contacts-table'] [title='Sort by Email'] .fa-caret-down"
+
+Sort_Contact_By_IM = "css:div[data-testid='contacts-table'] [title='Sort by IM']"
+Sort_Contact_By_IM_ASC = "css:div[data-testid='contacts-table'] [title='Sort by IM'] .fa-caret-up"
+Sort_Contact_By_IM_DSC = "css:div[data-testid='contacts-table'] [title='Sort by IM'] .fa-caret-down"
+
+Sort_Contact_By_Fax = "css:div[data-testid='contacts-table'] [title='Sort by Fax']"
+Sort_Contact_By_Fax_ASC = "css:div[data-testid='contacts-table'] [title='Sort by Fax'] .fa-caret-up"
+Sort_Contact_By_Fax_DSC = "css:div[data-testid='contacts-table'] [title='Sort by Fax'] .fa-caret-down"
+
+Type_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='Type']"
+Main_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='main']"
+Name_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='name']"
+Phone_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='phoneNumber']"
+ext_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='extension']"
+Email_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='emailAddress']"
+IM_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='chatTypeId']"
+Fax_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='faxNumber']"
