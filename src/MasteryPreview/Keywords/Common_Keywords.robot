@@ -82,21 +82,6 @@ Check checkbox
     ...    ELSE IF    '${Is_Checkbox_Selected}'== 'False'    Set Variable    No
     Run Keyword If    'Yes'!='${Actual_Chkbx_Value}'    Click Element    ${Checkbox_Element}
 
-#Edit Address
-#    wait until element is visible  ${edit_address_menu_button}
-#    click element  ${edit_address_menu_button}
-#    ${idValue}=  get element attribute  ${edit_address_menu_button}  id
-#    wait until element is visible  xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']
-#    click element  xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']//div[contains(text(),'Edit')]
-#
-#Delete Address
-#    wait until element is visible  ${delete_address_menu_button}
-#    click element  ${delete_address_menu_button}
-#    ${idValue}=  get element attribute  ${delete_address_menu_button}  id
-#    wait until element is visible  xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']
-#    click element  xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']//div[contains(text(),'Delete')]
-#    handle alert  ACCEPT
-
 Get List Before Sorting
     [Arguments]  ${AddressColumn}
     ${AddressList}=  create list

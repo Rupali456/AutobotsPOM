@@ -13,3 +13,8 @@ Save Credit
     click element  ${Save_Credit}
     wait until page contains element  ${success_toast}
     wait until page does not contain element  ${success_toast}
+
+Save Cust Button
+  wait until element is enabled  ${save_customer}
+  click element  ${save_customer}
+  wait until page does not contain  ${success_toast}

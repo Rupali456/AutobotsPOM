@@ -18,7 +18,7 @@ Add Edit and Delete Addresses from Address Table for Customer
   Login_Test
 
   #Below line added only to view the Test case Flow properly. As per your requirement you can change time to wait after each step.set selenium speed
-  #set selenium speed  0.1 seconds
+  set selenium speed  0.1 seconds
 
   wait until element is visible  ${select_cust}
   click element       ${select_cust}
