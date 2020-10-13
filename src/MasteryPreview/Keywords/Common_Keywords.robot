@@ -25,6 +25,14 @@ Select Previous Month
     : FOR  ${i}  IN RANGE  0  ${Total_Months}
     \   click element  ${Previous_Month_Button}
 
+Input and Select Value from Autopopulate Dropdown
+    [Arguments]  ${Input_Element}  ${Dropdown_Value_TBS}
+    wait until page contains element  ${Input_Element}
+    input text  ${Input_Element}  ${Dropdown_Value_TBS}
+    ${Select_Value_From_Dropdown}=  replace string  ${Select_Dropdown_Value}  ValueToBeSelected  ${Dropdown_Value_TBS}
+    wait until element is visible  ${Select_Value_From_Dropdown}
+    click element  ${Select_Value_From_Dropdown}
+
 Select a date from date picker
     [Arguments]     ${Expected_Date}  ${Expected_Month}  ${Expected_Year}
     ${current_date}=  get current date  result_format=datetime
@@ -33,14 +41,6 @@ Select a date from date picker
     ...  ELSE IF  ${current_date.month} > ${Expected_Month}  Select Previous Month  ${Expected_Year}  ${current_date.year}  ${Expected_Month}  ${current_date.month}
     ...  ELSE IF  ${current_date.month} < ${Expected_Month}  Select Next Month  ${Expected_Year}  ${current_date.year}  ${Expected_Month}  ${current_date.month}
     click element  css:div.react-datepicker__day--0${Expected_Date}
-
-Input and Select Value from Autopopulate Dropdown
-    [Arguments]  ${Input_Element}  ${Dropdown_Value_TBS}
-    wait until page contains element  ${Input_Element}
-    input text  ${Input_Element}  ${Dropdown_Value_TBS}
-    ${Select_Value_From_Dropdown}=  replace string  ${Select_Dropdown_Value}  ValueToBeSelected  ${Dropdown_Value_TBS}
-    wait until element is visible  ${Select_Value_From_Dropdown}
-    click element  ${Select_Value_From_Dropdown}
 
 Select Value from Dropdown
     [Arguments]  ${Dropdown_Element}  ${Dropdown_Value_TBS}
