@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20201008 19:54:09.836" rpa="false">
-<suite id="s1" name="Customer Address Table" source="C:\Users\Rupali.bhore\PycharmProjects\POM\src\MasteryPreview\Test_cases\Customer\Customer_Address_Table.robot">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20201013 18:03:35.694" rpa="false">
+<suite id="s1" name="Customer Address Table" source="C:\Users\Rupali.bhore\PycharmProjects\POM\src\MasteryPreview\Test_Cases\Customer\Customer_Address_Table.robot">
 <test id="s1-t1" name="Add Edit and Delete Addresses from Address Table for Customer">
 <kw name="Login_Test" library="Login_Keywords">
 <kw name="Launch Application" library="Login_Keywords">
@@ -10,28 +10,28 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201008 19:54:10.524" level="INFO">Opening browser 'chrome' to base url 'https://molo.preview.masterytms.com/'.</msg>
-<status status="PASS" starttime="20201008 19:54:10.524" endtime="20201008 19:54:21.180"></status>
+<msg timestamp="20201013 18:03:36.416" level="INFO">Opening browser 'chrome' to base url 'https://molo.preview.masterytms.com/'.</msg>
+<status status="PASS" starttime="20201013 18:03:36.416" endtime="20201013 18:03:46.504"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20201008 19:54:21.181" endtime="20201008 19:54:23.728"></status>
+<status status="PASS" starttime="20201013 18:03:46.505" endtime="20201013 18:03:48.666"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>${waitTime}</arg>
 </arguments>
-<status status="PASS" starttime="20201008 19:54:23.728" endtime="20201008 19:54:23.731"></status>
+<status status="PASS" starttime="20201013 18:03:48.666" endtime="20201013 18:03:48.666"></status>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <doc>Sets the timeout that is used by various keywords.</doc>
 <arguments>
 <arg>${waittime}</arg>
 </arguments>
-<status status="PASS" starttime="20201008 19:54:23.731" endtime="20201008 19:54:23.734"></status>
+<status status="PASS" starttime="20201013 18:03:48.666" endtime="20201013 18:03:48.666"></status>
 </kw>
-<status status="PASS" starttime="20201008 19:54:10.523" endtime="20201008 19:54:23.735"></status>
+<status status="PASS" starttime="20201013 18:03:36.414" endtime="20201013 18:03:48.666"></status>
 </kw>
 <kw name="Verify Landing Page Content" library="Login_Keywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -39,9 +39,9 @@
 <arguments>
 <arg>${LandingPage}</arg>
 </arguments>
-<status status="PASS" starttime="20201008 19:54:23.736" endtime="20201008 19:54:23.772"></status>
+<status status="PASS" starttime="20201013 18:03:48.666" endtime="20201013 18:03:48.695"></status>
 </kw>
-<status status="PASS" starttime="20201008 19:54:23.735" endtime="20201008 19:54:23.772"></status>
+<status status="PASS" starttime="20201013 18:03:48.666" endtime="20201013 18:03:48.695"></status>
 </kw>
 <kw name="Click on Login Button" library="Login_Keywords">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -49,17 +49,17 @@
 <arguments>
 <arg>${PleaseLogin_Button}</arg>
 </arguments>
-<msg timestamp="20201008 19:54:23.774" level="INFO">Clicking button 'xpath=//button[text()='Login']'.</msg>
-<status status="PASS" starttime="20201008 19:54:23.773" endtime="20201008 19:54:27.062"></status>
+<msg timestamp="20201013 18:03:48.695" level="INFO">Clicking button 'xpath=//button[text()='Login']'.</msg>
+<status status="PASS" starttime="20201013 18:03:48.695" endtime="20201013 18:03:51.719"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on the current page.</doc>
 <arguments>
 <arg>${MasteryWebTMS_Text}</arg>
 </arguments>
-<status status="PASS" starttime="20201008 19:54:27.062" endtime="20201008 19:54:27.111"></status>
+<status status="PASS" starttime="20201013 18:03:51.720" endtime="20201013 18:03:51.767"></status>
 </kw>
-<status status="PASS" starttime="20201008 19:54:23.773" endtime="20201008 19:54:27.111"></status>
+<status status="PASS" starttime="20201013 18:03:48.695" endtime="20201013 18:03:51.768"></status>
 </kw>
 <kw name="Enter Username Password and click on Continue" library="Login_Keywords">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -68,8 +68,8 @@
 <arg>${UserName_TextBox}</arg>
 <arg>${userName}</arg>
 </arguments>
-<msg timestamp="20201008 19:54:27.113" level="INFO">Typing text 'testautomation4@test.test' into text field 'name=email'.</msg>
-<status status="PASS" starttime="20201008 19:54:27.112" endtime="20201008 19:54:29.385"></status>
+<msg timestamp="20201013 18:03:51.769" level="INFO">Typing text 'ext.Harshal.pawar@mastery.net' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20201013 18:03:51.769" endtime="20201013 18:03:53.696"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -77,114 +77,2064 @@
 <arg>${Password_TextBox}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20201008 19:54:29.386" level="INFO">Typing text '4pBExkEPJXsNW567nuK5XeRF' into text field 'name=password'.</msg>
-<status status="PASS" starttime="20201008 19:54:29.385" endtime="20201008 19:54:30.074"></status>
+<msg timestamp="20201013 18:03:53.696" level="INFO">Typing text 'qkcdVdhsNQdAj3Vj' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20201013 18:03:53.696" endtime="20201013 18:03:54.404"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${login_Button}</arg>
 </arguments>
-<msg timestamp="20201008 19:54:30.075" level="INFO">Clicking element 'xpath=//span[text()='Log In']'.</msg>
-<status status="PASS" starttime="20201008 19:54:30.075" endtime="20201008 19:54:30.205"></status>
+<msg timestamp="20201013 18:03:54.405" level="INFO">Clicking element 'xpath=//span[text()='Log In']'.</msg>
+<status status="PASS" starttime="20201013 18:03:54.404" endtime="20201013 18:03:54.518"></status>
 </kw>
-<status status="PASS" starttime="20201008 19:54:27.111" endtime="20201008 19:54:30.205"></status>
+<status status="PASS" starttime="20201013 18:03:51.768" endtime="20201013 18:03:54.519"></status>
 </kw>
-<status status="PASS" starttime="20201008 19:54:10.522" endtime="20201008 19:54:30.205"></status>
-</kw>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>0.1 seconds</arg>
-</arguments>
-<status status="PASS" starttime="20201008 19:54:30.208" endtime="20201008 19:54:30.208"></status>
+<status status="PASS" starttime="20201013 18:03:36.413" endtime="20201013 18:03:54.520"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${select_cust}</arg>
 </arguments>
-<status status="PASS" starttime="20201008 19:54:30.259" endtime="20201008 19:54:44.261"></status>
+<status status="PASS" starttime="20201013 18:03:54.522" endtime="20201013 18:04:05.464"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${select_cust}</arg>
 </arguments>
-<msg timestamp="20201008 19:54:44.271" level="INFO">Clicking element 'xpath=//button[.='Customer']'.</msg>
-<status status="PASS" starttime="20201008 19:54:44.270" endtime="20201008 19:54:45.559"></status>
+<msg timestamp="20201013 18:04:05.466" level="INFO">Clicking element 'xpath=//button[.='Customer']'.</msg>
+<status status="PASS" starttime="20201013 18:04:05.465" endtime="20201013 18:04:05.629"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Select_Tab_FromCust}</arg>
 </arguments>
-<msg timestamp="20201008 19:54:45.734" level="INFO">Clicking element 'xpath=//a[.='Search']'.</msg>
-<status status="PASS" starttime="20201008 19:54:45.733" endtime="20201008 19:54:46.276"></status>
+<msg timestamp="20201013 18:04:05.631" level="INFO">Clicking element 'xpath=//a[.='Search']'.</msg>
+<status status="PASS" starttime="20201013 18:04:05.630" endtime="20201013 18:04:05.826"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>${customer_name_element}</arg>
-<arg>${customer_name}</arg>
+<arg>${Customer_name_element}</arg>
+<arg>${Address_Customer_Name}</arg>
 </arguments>
-<msg timestamp="20201008 19:54:46.305" level="INFO">Typing text 'Test Customer 260820401' into text field 'name=name'.</msg>
-<status status="PASS" starttime="20201008 19:54:46.305" endtime="20201008 19:54:48.043"></status>
+<msg timestamp="20201013 18:04:05.830" level="INFO">Typing text 'Test Customer 260820401' into text field 'name=name'.</msg>
+<status status="PASS" starttime="20201013 18:04:05.829" endtime="20201013 18:04:06.732"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${submit_button}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:04:06.733" endtime="20201013 18:04:06.769"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${search_button}</arg>
+<arg>${Submit_Button}</arg>
 </arguments>
-<msg timestamp="20201008 19:54:48.045" level="INFO">Clicking element 'xpath=//button[@class='css-10rxk89' and @type='submit']'.</msg>
-<status status="PASS" starttime="20201008 19:54:48.044" endtime="20201008 19:54:48.587"></status>
+<msg timestamp="20201013 18:04:06.769" level="INFO">Clicking element 'xpath=//button[@class='css-10rxk89' and @type='submit']'.</msg>
+<status status="PASS" starttime="20201013 18:04:06.769" endtime="20201013 18:04:06.973"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${list_of_customers}</arg>
+<arg>${list_of_Customer}</arg>
 </arguments>
-<status status="PASS" starttime="20201008 19:54:48.589" endtime="20201008 19:54:51.508"></status>
+<status status="PASS" starttime="20201013 18:04:06.974" endtime="20201013 18:04:09.852"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${search_results_links}</arg>
+<arg>${search_results_link}</arg>
 </arguments>
-<msg timestamp="20201008 19:54:51.510" level="INFO">Clicking element 'xpath=//div[@class='css-1wmyism']/div/a'.</msg>
-<status status="PASS" starttime="20201008 19:54:51.510" endtime="20201008 19:54:51.914"></status>
+<msg timestamp="20201013 18:04:09.853" level="INFO">Clicking element 'xpath=//div[@class='css-1wtbph2']//a'.</msg>
+<status status="PASS" starttime="20201013 18:04:09.852" endtime="20201013 18:04:09.962"></status>
+</kw>
+<kw name="Edit Menu Item" library="Common_Keywords">
+<arguments>
+<arg>${edit_address_menu_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Edit_Menu_Button}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:09.965" level="INFO">Clicking element 'xpath=//div[@title='Shipping']//parent::div/div[@data-cellheader='Menu']/button'.</msg>
+<status status="PASS" starttime="20201013 18:04:09.965" endtime="20201013 18:04:11.856"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${Edit_Menu_Button}</arg>
+<arg>id</arg>
+</arguments>
+<assign>
+<var>${idValue}</var>
+</assign>
+<msg timestamp="20201013 18:04:11.923" level="INFO">${idValue} = menu-button--menu--80</msg>
+<status status="PASS" starttime="20201013 18:04:11.857" endtime="20201013 18:04:11.923"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${customer_searched_by_name}</arg>
+<arg>xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20201008 19:55:12.753" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20201008 19:55:12.297" endtime="20201008 19:55:12.753"></status>
+<status status="PASS" starttime="20201013 18:04:11.923" endtime="20201013 18:04:11.965"></status>
 </kw>
-<msg timestamp="20201008 19:55:12.789" level="FAIL">Element 'xpath=//h1[.='${Customer_Name}']' not visible after 20 seconds.</msg>
-<status status="FAIL" starttime="20201008 19:54:51.968" endtime="20201008 19:55:12.789"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']//div[contains(text(),'Edit')]</arg>
+</arguments>
+<msg timestamp="20201013 18:04:11.966" level="INFO">Clicking element 'xpath=//reach-portal//div//div[@aria-labelledby='menu-button--menu--80']//div[contains(text(),'Edit')]'.</msg>
+<status status="PASS" starttime="20201013 18:04:11.966" endtime="20201013 18:04:12.071"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:04:09.963" endtime="20201013 18:04:12.071"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${address_type_element}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:12.073" level="INFO">Clicking element 'xpath=//div[@name='addressTypeId']//button'.</msg>
+<status status="PASS" starttime="20201013 18:04:12.072" endtime="20201013 18:04:12.337"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${edit_address_type_value_tbs}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:04:12.337" endtime="20201013 18:04:12.352"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${edit_address_type_value_tbs}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:12.352" level="INFO">Clicking element 'xpath=//li[.='Office']'.</msg>
+<status status="PASS" starttime="20201013 18:04:12.352" endtime="20201013 18:04:12.468"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${street_address_element}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${street1Value}</var>
+</assign>
+<msg timestamp="20201013 18:04:12.495" level="INFO">${street1Value} = ccxcxvc</msg>
+<status status="PASS" starttime="20201013 18:04:12.469" endtime="20201013 18:04:12.496"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${street1Value}</arg>
+</arguments>
+<assign>
+<var>${street1_value_backspaces_count}</var>
+</assign>
+<msg timestamp="20201013 18:04:12.497" level="INFO">Length is 7</msg>
+<msg timestamp="20201013 18:04:12.497" level="INFO">${street1_value_backspaces_count} = 7</msg>
+<status status="PASS" starttime="20201013 18:04:12.496" endtime="20201013 18:04:12.497"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${street1Value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${street1_value_backspaces_count}</arg>
+<arg>Press Keys</arg>
+<arg>${street_address_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<kw name="Repeat Keyword" library="BuiltIn">
+<doc>Executes the specified keyword multiple times.</doc>
+<arguments>
+<arg>${street1_value_backspaces_count}</arg>
+<arg>Press Keys</arg>
+<arg>${street_address_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:12.498" level="INFO">Repeating keyword, round 1/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:12.499" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street1'] element.</msg>
+<msg timestamp="20201013 18:04:12.802" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:12.499" endtime="20201013 18:04:12.952"></status>
+</kw>
+<msg timestamp="20201013 18:04:12.952" level="INFO">Repeating keyword, round 2/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:12.953" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street1'] element.</msg>
+<msg timestamp="20201013 18:04:13.295" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:12.952" endtime="20201013 18:04:13.311"></status>
+</kw>
+<msg timestamp="20201013 18:04:13.311" level="INFO">Repeating keyword, round 3/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:13.311" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street1'] element.</msg>
+<msg timestamp="20201013 18:04:13.597" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:13.311" endtime="20201013 18:04:13.620"></status>
+</kw>
+<msg timestamp="20201013 18:04:13.620" level="INFO">Repeating keyword, round 4/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:13.621" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street1'] element.</msg>
+<msg timestamp="20201013 18:04:13.900" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:13.620" endtime="20201013 18:04:13.921"></status>
+</kw>
+<msg timestamp="20201013 18:04:13.921" level="INFO">Repeating keyword, round 5/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:13.921" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street1'] element.</msg>
+<msg timestamp="20201013 18:04:14.200" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:13.921" endtime="20201013 18:04:14.230"></status>
+</kw>
+<msg timestamp="20201013 18:04:14.231" level="INFO">Repeating keyword, round 6/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:14.232" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street1'] element.</msg>
+<msg timestamp="20201013 18:04:14.523" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:14.231" endtime="20201013 18:04:14.549"></status>
+</kw>
+<msg timestamp="20201013 18:04:14.549" level="INFO">Repeating keyword, round 7/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:14.550" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street1'] element.</msg>
+<msg timestamp="20201013 18:04:14.845" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:14.549" endtime="20201013 18:04:14.876"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:04:12.498" endtime="20201013 18:04:14.876"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:04:12.497" endtime="20201013 18:04:14.876"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${street_address_element}</arg>
+<arg>${edit_street_address}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:14.877" level="INFO">Typing text '600 W Jackson' into text field 'xpath=//input[@name='street1']'.</msg>
+<status status="PASS" starttime="20201013 18:04:14.877" endtime="20201013 18:04:15.197"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${street_address2_element}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${street2Value}</var>
+</assign>
+<msg timestamp="20201013 18:04:15.228" level="INFO">${street2Value} = zxczxz</msg>
+<status status="PASS" starttime="20201013 18:04:15.198" endtime="20201013 18:04:15.228"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${street2Value}</arg>
+</arguments>
+<assign>
+<var>${street2_value_backspaces_count}</var>
+</assign>
+<msg timestamp="20201013 18:04:15.229" level="INFO">Length is 6</msg>
+<msg timestamp="20201013 18:04:15.229" level="INFO">${street2_value_backspaces_count} = 6</msg>
+<status status="PASS" starttime="20201013 18:04:15.229" endtime="20201013 18:04:15.229"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${street2Value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${street2_value_backspaces_count}</arg>
+<arg>Press Keys</arg>
+<arg>${street_address2_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<kw name="Repeat Keyword" library="BuiltIn">
+<doc>Executes the specified keyword multiple times.</doc>
+<arguments>
+<arg>${street2_value_backspaces_count}</arg>
+<arg>Press Keys</arg>
+<arg>${street_address2_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:15.231" level="INFO">Repeating keyword, round 1/6.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address2_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:15.231" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street2'] element.</msg>
+<msg timestamp="20201013 18:04:15.543" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:15.231" endtime="20201013 18:04:15.586"></status>
+</kw>
+<msg timestamp="20201013 18:04:15.587" level="INFO">Repeating keyword, round 2/6.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address2_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:15.587" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street2'] element.</msg>
+<msg timestamp="20201013 18:04:15.880" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:15.587" endtime="20201013 18:04:15.902"></status>
+</kw>
+<msg timestamp="20201013 18:04:15.903" level="INFO">Repeating keyword, round 3/6.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address2_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:15.904" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street2'] element.</msg>
+<msg timestamp="20201013 18:04:16.195" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:15.903" endtime="20201013 18:04:16.217"></status>
+</kw>
+<msg timestamp="20201013 18:04:16.217" level="INFO">Repeating keyword, round 4/6.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address2_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:16.219" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street2'] element.</msg>
+<msg timestamp="20201013 18:04:16.512" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:16.218" endtime="20201013 18:04:16.543"></status>
+</kw>
+<msg timestamp="20201013 18:04:16.543" level="INFO">Repeating keyword, round 5/6.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address2_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:16.544" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street2'] element.</msg>
+<msg timestamp="20201013 18:04:16.828" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:16.544" endtime="20201013 18:04:16.849"></status>
+</kw>
+<msg timestamp="20201013 18:04:16.849" level="INFO">Repeating keyword, round 6/6.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${street_address2_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:16.850" level="INFO">Sending key(s) ('\ue003',) to xpath=//input[@name='street2'] element.</msg>
+<msg timestamp="20201013 18:04:17.130" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:16.850" endtime="20201013 18:04:17.153"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:04:15.230" endtime="20201013 18:04:17.154"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:04:15.230" endtime="20201013 18:04:17.154"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${street_address2_element}</arg>
+<arg>${edit_street_address2}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:17.155" level="INFO">Typing text 'Street 2' into text field 'xpath=//input[@name='street2']'.</msg>
+<status status="PASS" starttime="20201013 18:04:17.155" endtime="20201013 18:04:17.326"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${cityValue}</var>
+</assign>
+<msg timestamp="20201013 18:04:17.358" level="INFO">${cityValue} = New York City, NY</msg>
+<status status="PASS" starttime="20201013 18:04:17.327" endtime="20201013 18:04:17.358"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${cityValue}</arg>
+</arguments>
+<assign>
+<var>${city_value_backspaces_count}</var>
+</assign>
+<msg timestamp="20201013 18:04:17.359" level="INFO">Length is 17</msg>
+<msg timestamp="20201013 18:04:17.359" level="INFO">${city_value_backspaces_count} = 17</msg>
+<status status="PASS" starttime="20201013 18:04:17.359" endtime="20201013 18:04:17.359"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${cityValue}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${city_value_backspaces_count}</arg>
+<arg>Press Keys</arg>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<kw name="Repeat Keyword" library="BuiltIn">
+<doc>Executes the specified keyword multiple times.</doc>
+<arguments>
+<arg>${city_value_backspaces_count}</arg>
+<arg>Press Keys</arg>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:17.361" level="INFO">Repeating keyword, round 1/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:17.362" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:17.661" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:17.362" endtime="20201013 18:04:17.711"></status>
+</kw>
+<msg timestamp="20201013 18:04:17.711" level="INFO">Repeating keyword, round 2/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:17.713" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:18.008" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:17.712" endtime="20201013 18:04:18.026"></status>
+</kw>
+<msg timestamp="20201013 18:04:18.027" level="INFO">Repeating keyword, round 3/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:18.028" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:18.311" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:18.027" endtime="20201013 18:04:18.329"></status>
+</kw>
+<msg timestamp="20201013 18:04:18.329" level="INFO">Repeating keyword, round 4/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:18.330" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:18.610" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:18.330" endtime="20201013 18:04:18.628"></status>
+</kw>
+<msg timestamp="20201013 18:04:18.628" level="INFO">Repeating keyword, round 5/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:18.629" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:18.911" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:18.629" endtime="20201013 18:04:18.928"></status>
+</kw>
+<msg timestamp="20201013 18:04:18.928" level="INFO">Repeating keyword, round 6/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:18.929" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:19.212" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:18.929" endtime="20201013 18:04:19.231"></status>
+</kw>
+<msg timestamp="20201013 18:04:19.231" level="INFO">Repeating keyword, round 7/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:19.232" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:19.510" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:19.231" endtime="20201013 18:04:19.531"></status>
+</kw>
+<msg timestamp="20201013 18:04:19.531" level="INFO">Repeating keyword, round 8/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:19.532" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:19.826" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:19.532" endtime="20201013 18:04:19.846"></status>
+</kw>
+<msg timestamp="20201013 18:04:19.846" level="INFO">Repeating keyword, round 9/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:19.848" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:20.127" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:19.847" endtime="20201013 18:04:20.144"></status>
+</kw>
+<msg timestamp="20201013 18:04:20.144" level="INFO">Repeating keyword, round 10/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:20.145" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:20.425" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:20.144" endtime="20201013 18:04:20.442"></status>
+</kw>
+<msg timestamp="20201013 18:04:20.442" level="INFO">Repeating keyword, round 11/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:20.444" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:20.725" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:20.443" endtime="20201013 18:04:20.742"></status>
+</kw>
+<msg timestamp="20201013 18:04:20.742" level="INFO">Repeating keyword, round 12/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:20.743" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:21.025" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:20.742" endtime="20201013 18:04:21.042"></status>
+</kw>
+<msg timestamp="20201013 18:04:21.042" level="INFO">Repeating keyword, round 13/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:21.043" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:21.325" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:21.043" endtime="20201013 18:04:21.343"></status>
+</kw>
+<msg timestamp="20201013 18:04:21.343" level="INFO">Repeating keyword, round 14/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:21.344" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:21.628" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:21.343" endtime="20201013 18:04:21.645"></status>
+</kw>
+<msg timestamp="20201013 18:04:21.645" level="INFO">Repeating keyword, round 15/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:21.646" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:21.941" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:21.645" endtime="20201013 18:04:21.957"></status>
+</kw>
+<msg timestamp="20201013 18:04:21.957" level="INFO">Repeating keyword, round 16/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:21.958" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:22.240" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:21.957" endtime="20201013 18:04:22.257"></status>
+</kw>
+<msg timestamp="20201013 18:04:22.257" level="INFO">Repeating keyword, round 17/17.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${City_Element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:22.258" level="INFO">Sending key(s) ('\ue003',) to xpath=//div[@name='cityState']//input[@class='css-hfrvt9'] element.</msg>
+<msg timestamp="20201013 18:04:22.542" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:22.257" endtime="20201013 18:04:22.586"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:04:17.361" endtime="20201013 18:04:22.586"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:04:17.360" endtime="20201013 18:04:22.587"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${city_element}</arg>
+<arg>${edit_city}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:22.589" level="INFO">Typing text 'Chicago, IL' into text field 'xpath=//div[@name='cityState']//input[@class='css-hfrvt9']'.</msg>
+<status status="PASS" starttime="20201013 18:04:22.588" endtime="20201013 18:04:22.732"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${edit_city_tbs}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:04:22.732" endtime="20201013 18:04:23.529"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${edit_city_tbs}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:23.530" level="INFO">Clicking element 'xpath=//li[.='Chicago, IL']'.</msg>
+<status status="PASS" starttime="20201013 18:04:23.530" endtime="20201013 18:04:23.656"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${postCode_element}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${PostCodeValue}</var>
+</assign>
+<msg timestamp="20201013 18:04:23.697" level="INFO">${PostCodeValue} = 6115</msg>
+<status status="PASS" starttime="20201013 18:04:23.657" endtime="20201013 18:04:23.697"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${PostCodeValue}</arg>
+</arguments>
+<assign>
+<var>${PostCode_value_backspaces_count}</var>
+</assign>
+<msg timestamp="20201013 18:04:23.700" level="INFO">Length is 4</msg>
+<msg timestamp="20201013 18:04:23.700" level="INFO">${PostCode_value_backspaces_count} = 4</msg>
+<status status="PASS" starttime="20201013 18:04:23.699" endtime="20201013 18:04:23.700"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${PostCodeValue}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${PostCode_value_backspaces_count}</arg>
+<arg>Press Keys</arg>
+<arg>${postCode_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<kw name="Repeat Keyword" library="BuiltIn">
+<doc>Executes the specified keyword multiple times.</doc>
+<arguments>
+<arg>${PostCode_value_backspaces_count}</arg>
+<arg>Press Keys</arg>
+<arg>${postCode_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:23.702" level="INFO">Repeating keyword, round 1/4.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${postCode_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:23.704" level="INFO">Sending key(s) ('\ue003',) to name=postalCode element.</msg>
+<msg timestamp="20201013 18:04:24.042" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:23.703" endtime="20201013 18:04:24.083"></status>
+</kw>
+<msg timestamp="20201013 18:04:24.083" level="INFO">Repeating keyword, round 2/4.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${postCode_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:24.085" level="INFO">Sending key(s) ('\ue003',) to name=postalCode element.</msg>
+<msg timestamp="20201013 18:04:24.380" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:24.084" endtime="20201013 18:04:24.409"></status>
+</kw>
+<msg timestamp="20201013 18:04:24.409" level="INFO">Repeating keyword, round 3/4.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${postCode_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:24.410" level="INFO">Sending key(s) ('\ue003',) to name=postalCode element.</msg>
+<msg timestamp="20201013 18:04:24.690" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:24.409" endtime="20201013 18:04:24.718"></status>
+</kw>
+<msg timestamp="20201013 18:04:24.718" level="INFO">Repeating keyword, round 4/4.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${postCode_element}</arg>
+<arg>\ue003</arg>
+</arguments>
+<msg timestamp="20201013 18:04:24.718" level="INFO">Sending key(s) ('\ue003',) to name=postalCode element.</msg>
+<msg timestamp="20201013 18:04:25.006" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20201013 18:04:24.718" endtime="20201013 18:04:25.035"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:04:23.702" endtime="20201013 18:04:25.035"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:04:23.701" endtime="20201013 18:04:25.036"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${postCode_element}</arg>
+<arg>${edit_postcode}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:25.037" level="INFO">Typing text '60661' into text field 'name=postalCode'.</msg>
+<status status="PASS" starttime="20201013 18:04:25.036" endtime="20201013 18:04:25.228"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${country_element}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:25.229" level="INFO">Clicking element 'xpath=//div[@name='country']//button'.</msg>
+<status status="PASS" starttime="20201013 18:04:25.228" endtime="20201013 18:04:25.321"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${edit_country_value_tbs}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:04:25.321" endtime="20201013 18:04:25.359"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${edit_country_value_tbs}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:25.360" level="INFO">Clicking element 'xpath=//li[.='USA']'.</msg>
+<status status="PASS" starttime="20201013 18:04:25.360" endtime="20201013 18:04:25.431"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Save_Customer_Button}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:04:25.431" endtime="20201013 18:04:25.735"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${Save_Customer_Button}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:04:25.735" endtime="20201013 18:04:25.769"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Save_Customer_Button}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:25.771" level="INFO">Clicking element 'xpath=//button[@class='css-1p16kem' and .='Save Address']'.</msg>
+<status status="PASS" starttime="20201013 18:04:25.770" endtime="20201013 18:04:26.215"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${success_toast}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:04:26.215" endtime="20201013 18:04:46.258"></status>
+</kw>
+<kw name="Delete Menu Item" library="Common_Keywords">
+<arguments>
+<arg>${delete_address_menu_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Delete_Menu_Button}</arg>
+</arguments>
+<msg timestamp="20201013 18:04:46.261" level="INFO">Clicking element 'xpath=//div[@title='Office']//parent::div/div[@data-cellheader='Menu']/button'.</msg>
+<status status="PASS" starttime="20201013 18:04:46.261" endtime="20201013 18:04:46.336"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${Delete_Menu_Button}</arg>
+<arg>id</arg>
+</arguments>
+<assign>
+<var>${idValue}</var>
+</assign>
+<msg timestamp="20201013 18:04:46.362" level="INFO">${idValue} = menu-button--menu--80</msg>
+<status status="PASS" starttime="20201013 18:04:46.337" endtime="20201013 18:04:46.362"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:04:46.363" endtime="20201013 18:04:46.397"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']//div[contains(text(),'Delete')]</arg>
+</arguments>
+<msg timestamp="20201013 18:04:46.398" level="INFO">Clicking element 'xpath=//reach-portal//div//div[@aria-labelledby='menu-button--menu--80']//div[contains(text(),'Delete')]'.</msg>
+<status status="PASS" starttime="20201013 18:04:46.398" endtime="20201013 18:04:46.516"></status>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>ACCEPT</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:04:46.516" endtime="20201013 18:04:47.035"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:04:46.259" endtime="20201013 18:04:47.036"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${success_toast}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:04:47.037" endtime="20201013 18:05:07.547"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${add_address_button}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:07.549" level="INFO">Clicking element 'xpath=//div[@data-testid='addresses-table']//button[@data-testid='table-add-new']'.</msg>
+<status status="PASS" starttime="20201013 18:05:07.548" endtime="20201013 18:05:07.725"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${address_type_element}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:07.726" level="INFO">Clicking element 'xpath=//div[@name='addressTypeId']//button'.</msg>
+<status status="PASS" starttime="20201013 18:05:07.726" endtime="20201013 18:05:07.809"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${address_type_value_tbs}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:07.812" endtime="20201013 18:05:07.847"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${address_type_value_tbs}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:07.849" level="INFO">Clicking element 'xpath=//li[.='Shipping']'.</msg>
+<status status="PASS" starttime="20201013 18:05:07.848" endtime="20201013 18:05:07.923"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${street_address_element}</arg>
+<arg>${street_address}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:07.924" level="INFO">Typing text '6300 W Touhy Ave' into text field 'xpath=//input[@name='street1']'.</msg>
+<status status="PASS" starttime="20201013 18:05:07.923" endtime="20201013 18:05:08.236"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${street_address2_element}</arg>
+<arg>${street_address2}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:08.237" level="INFO">Typing text 'Test Address 2' into text field 'xpath=//input[@name='street2']'.</msg>
+<status status="PASS" starttime="20201013 18:05:08.237" endtime="20201013 18:05:08.517"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${city_element}</arg>
+<arg>${city}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:08.519" level="INFO">Typing text 'Niles, IL' into text field 'xpath=//div[@name='cityState']//input[@class='css-hfrvt9']'.</msg>
+<status status="PASS" starttime="20201013 18:05:08.518" endtime="20201013 18:05:08.700"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${city_tbs}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:08.701" endtime="20201013 18:05:09.591"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${city_tbs}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:09.592" level="INFO">Clicking element 'xpath=//li[.='Niles, IL']'.</msg>
+<status status="PASS" starttime="20201013 18:05:09.592" endtime="20201013 18:05:09.688"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${postCode_element}</arg>
+<arg>${postcode}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:09.689" level="INFO">Typing text '60714' into text field 'name=postalCode'.</msg>
+<status status="PASS" starttime="20201013 18:05:09.689" endtime="20201013 18:05:09.912"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${country_element}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:09.913" level="INFO">Clicking element 'xpath=//div[@name='country']//button'.</msg>
+<status status="PASS" starttime="20201013 18:05:09.913" endtime="20201013 18:05:10.156"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${country_value_tbs}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:10.158" endtime="20201013 18:05:10.192"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${country_value_tbs}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:10.193" level="INFO">Clicking element 'xpath=//li[.='USA']'.</msg>
+<status status="PASS" starttime="20201013 18:05:10.193" endtime="20201013 18:05:10.262"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Add_Customer_Button}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:10.262" endtime="20201013 18:05:10.552"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Add_Customer_Button}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:10.553" endtime="20201013 18:05:10.579"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${Add_Customer_Button}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:10.580" endtime="20201013 18:05:10.619"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Add_Customer_Button}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:10.620" level="INFO">Clicking element 'xpath=//button[@class='css-1p16kem' and .='Add Address']'.</msg>
+<status status="PASS" starttime="20201013 18:05:10.620" endtime="20201013 18:05:11.003"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${success_toast}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:11.005" endtime="20201013 18:05:31.055"></status>
+</kw>
+<kw name="Get List Before Sorting" library="Common_Keywords">
+<arguments>
+<arg>${Addresses_Type_Column}</arg>
+</arguments>
+<assign>
+<var>${AddressesTypeList}</var>
+</assign>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${AddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.058" level="INFO">${AddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:31.057" endtime="20201013 18:05:31.058"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{AddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.081" level="INFO">@{AddressLocators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="acc975b9f4479e4d77d879d05821f11f", element="2572f856-466a-4510-9b25-af3577fad8db")&gt; ]</msg>
+<status status="PASS" starttime="20201013 18:05:31.058" endtime="20201013 18:05:31.081"></status>
+</kw>
+<kw name="${locator} IN [ @{AddressLocators} ]" type="for">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;acc975b9f4479e4d77d879d05821f11f&quot;, element=&quot;2572f856-466a-4510-9b25-af3577fad8db&quot;)&gt;" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.126" level="INFO">${text} = Type</msg>
+<status status="PASS" starttime="20201013 18:05:31.084" endtime="20201013 18:05:31.126"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.127" endtime="20201013 18:05:31.127"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:31.083" endtime="20201013 18:05:31.128"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:31.081" endtime="20201013 18:05:31.128"></status>
+</kw>
+<msg timestamp="20201013 18:05:31.128" level="INFO">${AddressesTypeList} = ['Type']</msg>
+<status status="PASS" starttime="20201013 18:05:31.056" endtime="20201013 18:05:31.128"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sort_address_by_type}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:31.130" level="INFO">Clicking element 'css:div[data-testid='addresses-table'] [title='Sort by Type']'.</msg>
+<status status="PASS" starttime="20201013 18:05:31.129" endtime="20201013 18:05:31.312"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${list_of_addresses}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.313" endtime="20201013 18:05:31.371"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${sort_address_by_type_asc}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.372" endtime="20201013 18:05:31.474"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${sort_address_by_type_asc}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:31.488" level="INFO">Current page contains element 'css:div[data-testid='addresses-table'] [title='Sort by Type'] .fa-caret-up'.</msg>
+<status status="PASS" starttime="20201013 18:05:31.475" endtime="20201013 18:05:31.488"></status>
+</kw>
+<kw name="Verify Sorted Column is in Ascending Order" library="Common_Keywords">
+<arguments>
+<arg>${AddressesTypeList}</arg>
+<arg>${Addresses_Type_Column}</arg>
+</arguments>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${AscAddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.491" level="INFO">${AscAddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:31.490" endtime="20201013 18:05:31.491"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{AscAddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.505" level="INFO">@{AscAddressLocators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="acc975b9f4479e4d77d879d05821f11f", element="2572f856-466a-4510-9b25-af3577fad8db")&gt; ]</msg>
+<status status="PASS" starttime="20201013 18:05:31.491" endtime="20201013 18:05:31.505"></status>
+</kw>
+<kw name="${locator} IN [ @{AscAddressLocators} ]" type="for">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;acc975b9f4479e4d77d879d05821f11f&quot;, element=&quot;2572f856-466a-4510-9b25-af3577fad8db&quot;)&gt;" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.530" level="INFO">${text} = Type</msg>
+<status status="PASS" starttime="20201013 18:05:31.506" endtime="20201013 18:05:31.530"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${AscAddressList}</arg>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.531" endtime="20201013 18:05:31.531"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:31.506" endtime="20201013 18:05:31.532"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:31.505" endtime="20201013 18:05:31.532"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+</arguments>
+<assign>
+<var>${AddressExpectedList}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.533" level="INFO">${AddressExpectedList} = ['Type']</msg>
+<status status="PASS" starttime="20201013 18:05:31.532" endtime="20201013 18:05:31.533"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.533" endtime="20201013 18:05:31.534"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+<arg>${AscAddressList}</arg>
+<arg>ignore_order=False</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.534" endtime="20201013 18:05:31.535"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:31.489" endtime="20201013 18:05:31.536"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sort_address_by_type}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:31.537" level="INFO">Clicking element 'css:div[data-testid='addresses-table'] [title='Sort by Type']'.</msg>
+<status status="PASS" starttime="20201013 18:05:31.536" endtime="20201013 18:05:31.640"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${list_of_addresses}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.641" endtime="20201013 18:05:31.670"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${sort_address_by_type_dsc}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.670" endtime="20201013 18:05:31.704"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${sort_address_by_type_dsc}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:31.716" level="INFO">Current page contains element 'css:div[data-testid='addresses-table'] [title='Sort by Type'] .fa-caret-down'.</msg>
+<status status="PASS" starttime="20201013 18:05:31.704" endtime="20201013 18:05:31.716"></status>
+</kw>
+<kw name="Verify Sorted Column is in Descending Order" library="Common_Keywords">
+<arguments>
+<arg>${AddressesTypeList}</arg>
+<arg>${Addresses_Type_Column}</arg>
+</arguments>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${DescAddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.719" level="INFO">${DescAddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:31.718" endtime="20201013 18:05:31.719"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{DescAddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.733" level="INFO">@{DescAddressLocators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="acc975b9f4479e4d77d879d05821f11f", element="2572f856-466a-4510-9b25-af3577fad8db")&gt; ]</msg>
+<status status="PASS" starttime="20201013 18:05:31.719" endtime="20201013 18:05:31.734"></status>
+</kw>
+<kw name="${locator} IN [ @{DescAddressLocators} ]" type="for">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;acc975b9f4479e4d77d879d05821f11f&quot;, element=&quot;2572f856-466a-4510-9b25-af3577fad8db&quot;)&gt;" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.755" level="INFO">${text} = Type</msg>
+<status status="PASS" starttime="20201013 18:05:31.735" endtime="20201013 18:05:31.755"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${DescAddressList}</arg>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.755" endtime="20201013 18:05:31.756"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:31.734" endtime="20201013 18:05:31.756"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:31.734" endtime="20201013 18:05:31.756"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+</arguments>
+<assign>
+<var>${AddressExpectedList}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.757" level="INFO">${AddressExpectedList} = ['Type']</msg>
+<status status="PASS" starttime="20201013 18:05:31.756" endtime="20201013 18:05:31.757"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.757" endtime="20201013 18:05:31.758"></status>
+</kw>
+<kw name="Reverse List" library="Collections">
+<doc>Reverses the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.758" endtime="20201013 18:05:31.759"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+<arg>${DescAddressList}</arg>
+<arg>ignore_order=False</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.759" endtime="20201013 18:05:31.760"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:31.717" endtime="20201013 18:05:31.760"></status>
+</kw>
+<kw name="Get List Before Sorting" library="Common_Keywords">
+<arguments>
+<arg>${Addresses_Address_Column}</arg>
+</arguments>
+<assign>
+<var>${AddressesAddressList}</var>
+</assign>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${AddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.762" level="INFO">${AddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:31.762" endtime="20201013 18:05:31.762"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{AddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.786" level="INFO">@{AddressLocators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="acc975b9f4479e4d77d879d05821f11f", element="855ad3d9-c71b-45ae-9ca6-7d600794e2a4")&gt; ]</msg>
+<status status="PASS" starttime="20201013 18:05:31.762" endtime="20201013 18:05:31.786"></status>
+</kw>
+<kw name="${locator} IN [ @{AddressLocators} ]" type="for">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;acc975b9f4479e4d77d879d05821f11f&quot;, element=&quot;855ad3d9-c71b-45ae-9ca6-7d600794e2a4&quot;)&gt;" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201013 18:05:31.817" level="INFO">${text} = Address</msg>
+<status status="PASS" starttime="20201013 18:05:31.787" endtime="20201013 18:05:31.818"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.818" endtime="20201013 18:05:31.818"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:31.787" endtime="20201013 18:05:31.818"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:31.787" endtime="20201013 18:05:31.818"></status>
+</kw>
+<msg timestamp="20201013 18:05:31.819" level="INFO">${AddressesAddressList} = ['Address']</msg>
+<status status="PASS" starttime="20201013 18:05:31.761" endtime="20201013 18:05:31.819"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sort_address_by_address}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:31.819" level="INFO">Clicking element 'css:div[data-testid='addresses-table'] [title='Sort by Address']'.</msg>
+<status status="PASS" starttime="20201013 18:05:31.819" endtime="20201013 18:05:31.943"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${list_of_addresses}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.944" endtime="20201013 18:05:31.977"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${sort_address_by_address_asc}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:31.978" endtime="20201013 18:05:32.075"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${sort_address_by_address_asc}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:32.088" level="INFO">Current page contains element 'css:div[data-testid='addresses-table'] [title='Sort by Address'] .fa-caret-up'.</msg>
+<status status="PASS" starttime="20201013 18:05:32.076" endtime="20201013 18:05:32.088"></status>
+</kw>
+<kw name="Verify Sorted Column is in Ascending Order" library="Common_Keywords">
+<arguments>
+<arg>${AddressesAddressList}</arg>
+<arg>${Addresses_Address_Column}</arg>
+</arguments>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${AscAddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.090" level="INFO">${AscAddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:32.090" endtime="20201013 18:05:32.090"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{AscAddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.108" level="INFO">@{AscAddressLocators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="acc975b9f4479e4d77d879d05821f11f", element="855ad3d9-c71b-45ae-9ca6-7d600794e2a4")&gt; ]</msg>
+<status status="PASS" starttime="20201013 18:05:32.090" endtime="20201013 18:05:32.109"></status>
+</kw>
+<kw name="${locator} IN [ @{AscAddressLocators} ]" type="for">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;acc975b9f4479e4d77d879d05821f11f&quot;, element=&quot;855ad3d9-c71b-45ae-9ca6-7d600794e2a4&quot;)&gt;" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.130" level="INFO">${text} = Address</msg>
+<status status="PASS" starttime="20201013 18:05:32.109" endtime="20201013 18:05:32.130"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${AscAddressList}</arg>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.131" endtime="20201013 18:05:32.131"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.109" endtime="20201013 18:05:32.131"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.109" endtime="20201013 18:05:32.132"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+</arguments>
+<assign>
+<var>${AddressExpectedList}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.133" level="INFO">${AddressExpectedList} = ['Address']</msg>
+<status status="PASS" starttime="20201013 18:05:32.132" endtime="20201013 18:05:32.133"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.133" endtime="20201013 18:05:32.133"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+<arg>${AscAddressList}</arg>
+<arg>ignore_order=False</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.134" endtime="20201013 18:05:32.135"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.088" endtime="20201013 18:05:32.135"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sort_address_by_address}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:32.136" level="INFO">Clicking element 'css:div[data-testid='addresses-table'] [title='Sort by Address']'.</msg>
+<status status="PASS" starttime="20201013 18:05:32.136" endtime="20201013 18:05:32.230"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${list_of_addresses}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.260" endtime="20201013 18:05:32.345"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${sort_address_by_address_dsc}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.345" endtime="20201013 18:05:32.389"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${sort_address_by_address_dsc}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:32.410" level="INFO">Current page contains element 'css:div[data-testid='addresses-table'] [title='Sort by Address'] .fa-caret-down'.</msg>
+<status status="PASS" starttime="20201013 18:05:32.389" endtime="20201013 18:05:32.410"></status>
+</kw>
+<kw name="Verify Sorted Column is in Descending Order" library="Common_Keywords">
+<arguments>
+<arg>${AddressesAddressList}</arg>
+<arg>${Addresses_Address_Column}</arg>
+</arguments>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${DescAddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.413" level="INFO">${DescAddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:32.412" endtime="20201013 18:05:32.413"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{DescAddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.425" level="INFO">@{DescAddressLocators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="acc975b9f4479e4d77d879d05821f11f", element="855ad3d9-c71b-45ae-9ca6-7d600794e2a4")&gt; ]</msg>
+<status status="PASS" starttime="20201013 18:05:32.413" endtime="20201013 18:05:32.425"></status>
+</kw>
+<kw name="${locator} IN [ @{DescAddressLocators} ]" type="for">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;acc975b9f4479e4d77d879d05821f11f&quot;, element=&quot;855ad3d9-c71b-45ae-9ca6-7d600794e2a4&quot;)&gt;" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.446" level="INFO">${text} = Address</msg>
+<status status="PASS" starttime="20201013 18:05:32.426" endtime="20201013 18:05:32.447"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${DescAddressList}</arg>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.447" endtime="20201013 18:05:32.448"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.426" endtime="20201013 18:05:32.448"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.425" endtime="20201013 18:05:32.448"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+</arguments>
+<assign>
+<var>${AddressExpectedList}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.449" level="INFO">${AddressExpectedList} = ['Address']</msg>
+<status status="PASS" starttime="20201013 18:05:32.448" endtime="20201013 18:05:32.449"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.449" endtime="20201013 18:05:32.450"></status>
+</kw>
+<kw name="Reverse List" library="Collections">
+<doc>Reverses the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.450" endtime="20201013 18:05:32.451"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+<arg>${DescAddressList}</arg>
+<arg>ignore_order=False</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.451" endtime="20201013 18:05:32.452"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.411" endtime="20201013 18:05:32.452"></status>
+</kw>
+<kw name="Get List Before Sorting" library="Common_Keywords">
+<arguments>
+<arg>${Addresses_Location_Column}</arg>
+</arguments>
+<assign>
+<var>${AddressesLocationList}</var>
+</assign>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${AddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.454" level="INFO">${AddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:32.453" endtime="20201013 18:05:32.454"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{AddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.473" level="INFO">@{AddressLocators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="acc975b9f4479e4d77d879d05821f11f", element="2d8b33d8-cab3-4568-8024-7e2bebab692b")&gt; ]</msg>
+<status status="PASS" starttime="20201013 18:05:32.454" endtime="20201013 18:05:32.473"></status>
+</kw>
+<kw name="${locator} IN [ @{AddressLocators} ]" type="for">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;acc975b9f4479e4d77d879d05821f11f&quot;, element=&quot;2d8b33d8-cab3-4568-8024-7e2bebab692b&quot;)&gt;" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.536" level="INFO">${text} = Location</msg>
+<status status="PASS" starttime="20201013 18:05:32.474" endtime="20201013 18:05:32.536"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.536" endtime="20201013 18:05:32.537"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.474" endtime="20201013 18:05:32.537"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.474" endtime="20201013 18:05:32.537"></status>
+</kw>
+<msg timestamp="20201013 18:05:32.537" level="INFO">${AddressesLocationList} = ['Location']</msg>
+<status status="PASS" starttime="20201013 18:05:32.452" endtime="20201013 18:05:32.538"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sort_address_by_location}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:32.539" level="INFO">Clicking element 'css:div[data-testid='addresses-table'] [title='Sort by Location']'.</msg>
+<status status="PASS" starttime="20201013 18:05:32.539" endtime="20201013 18:05:32.706"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${list_of_addresses}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.707" endtime="20201013 18:05:32.750"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${sort_address_by_location_asc}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.751" endtime="20201013 18:05:32.790"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${sort_address_by_location_asc}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:32.804" level="INFO">Current page contains element 'css:div[data-testid='addresses-table'] [title='Sort by Location'] .fa-caret-up'.</msg>
+<status status="PASS" starttime="20201013 18:05:32.791" endtime="20201013 18:05:32.804"></status>
+</kw>
+<kw name="Verify Sorted Column is in Ascending Order" library="Common_Keywords">
+<arguments>
+<arg>${AddressesLocationList}</arg>
+<arg>${Addresses_Location_Column}</arg>
+</arguments>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${AscAddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.807" level="INFO">${AscAddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:32.807" endtime="20201013 18:05:32.807"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{AscAddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.819" level="INFO">@{AscAddressLocators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="acc975b9f4479e4d77d879d05821f11f", element="2d8b33d8-cab3-4568-8024-7e2bebab692b")&gt; ]</msg>
+<status status="PASS" starttime="20201013 18:05:32.807" endtime="20201013 18:05:32.819"></status>
+</kw>
+<kw name="${locator} IN [ @{AscAddressLocators} ]" type="for">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;acc975b9f4479e4d77d879d05821f11f&quot;, element=&quot;2d8b33d8-cab3-4568-8024-7e2bebab692b&quot;)&gt;" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.837" level="INFO">${text} = Location</msg>
+<status status="PASS" starttime="20201013 18:05:32.820" endtime="20201013 18:05:32.837"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${AscAddressList}</arg>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.837" endtime="20201013 18:05:32.838"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.820" endtime="20201013 18:05:32.838"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.819" endtime="20201013 18:05:32.838"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+</arguments>
+<assign>
+<var>${AddressExpectedList}</var>
+</assign>
+<msg timestamp="20201013 18:05:32.839" level="INFO">${AddressExpectedList} = ['Location']</msg>
+<status status="PASS" starttime="20201013 18:05:32.838" endtime="20201013 18:05:32.839"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.839" endtime="20201013 18:05:32.840"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+<arg>${AscAddressList}</arg>
+<arg>ignore_order=False</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.840" endtime="20201013 18:05:32.841"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.805" endtime="20201013 18:05:32.841"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sort_address_by_location}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:32.842" level="INFO">Clicking element 'css:div[data-testid='addresses-table'] [title='Sort by Location']'.</msg>
+<status status="PASS" starttime="20201013 18:05:32.841" endtime="20201013 18:05:32.912"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${list_of_addresses}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.914" endtime="20201013 18:05:32.938"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${sort_address_by_location_dsc}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:32.938" endtime="20201013 18:05:32.985"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${sort_address_by_location_dsc}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:32.998" level="INFO">Current page contains element 'css:div[data-testid='addresses-table'] [title='Sort by Location'] .fa-caret-down'.</msg>
+<status status="PASS" starttime="20201013 18:05:32.986" endtime="20201013 18:05:32.998"></status>
+</kw>
+<kw name="Verify Sorted Column is in Descending Order" library="Common_Keywords">
+<arguments>
+<arg>${AddressesLocationList}</arg>
+<arg>${Addresses_Location_Column}</arg>
+</arguments>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${DescAddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:33.001" level="INFO">${DescAddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:33.000" endtime="20201013 18:05:33.001"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{DescAddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:05:33.013" level="INFO">@{DescAddressLocators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="acc975b9f4479e4d77d879d05821f11f", element="2d8b33d8-cab3-4568-8024-7e2bebab692b")&gt; ]</msg>
+<status status="PASS" starttime="20201013 18:05:33.001" endtime="20201013 18:05:33.013"></status>
+</kw>
+<kw name="${locator} IN [ @{DescAddressLocators} ]" type="for">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;acc975b9f4479e4d77d879d05821f11f&quot;, element=&quot;2d8b33d8-cab3-4568-8024-7e2bebab692b&quot;)&gt;" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201013 18:05:33.040" level="INFO">${text} = Location</msg>
+<status status="PASS" starttime="20201013 18:05:33.014" endtime="20201013 18:05:33.040"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${DescAddressList}</arg>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:33.040" endtime="20201013 18:05:33.041"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:33.014" endtime="20201013 18:05:33.041"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:33.013" endtime="20201013 18:05:33.041"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+</arguments>
+<assign>
+<var>${AddressExpectedList}</var>
+</assign>
+<msg timestamp="20201013 18:05:33.042" level="INFO">${AddressExpectedList} = ['Location']</msg>
+<status status="PASS" starttime="20201013 18:05:33.041" endtime="20201013 18:05:33.042"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:33.042" endtime="20201013 18:05:33.043"></status>
+</kw>
+<kw name="Reverse List" library="Collections">
+<doc>Reverses the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:33.043" endtime="20201013 18:05:33.043"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+<arg>${DescAddressList}</arg>
+<arg>ignore_order=False</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:33.044" endtime="20201013 18:05:33.045"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:32.999" endtime="20201013 18:05:33.045"></status>
+</kw>
+<kw name="Get List Before Sorting" library="Common_Keywords">
+<arguments>
+<arg>${Addresses_Main_Column}</arg>
+</arguments>
+<assign>
+<var>${AddressesMainList}</var>
+</assign>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${AddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:33.049" level="INFO">${AddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:33.048" endtime="20201013 18:05:33.049"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{AddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:05:53.073" level="INFO">@{AddressLocators} = [ ]</msg>
+<status status="PASS" starttime="20201013 18:05:33.049" endtime="20201013 18:05:53.073"></status>
+</kw>
+<kw name="${locator} IN [ @{AddressLocators} ]" type="for">
+<status status="PASS" starttime="20201013 18:05:53.073" endtime="20201013 18:05:53.073"></status>
+</kw>
+<msg timestamp="20201013 18:05:53.073" level="INFO">${AddressesMainList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:33.046" endtime="20201013 18:05:53.073"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sort_address_by_main}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:53.074" level="INFO">Clicking element 'css:div[data-testid='addresses-table'] [title='Sort by Main']'.</msg>
+<status status="PASS" starttime="20201013 18:05:53.074" endtime="20201013 18:05:53.237"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${list_of_addresses}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:53.238" endtime="20201013 18:05:53.277"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${sort_address_by_main_asc}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:05:53.278" endtime="20201013 18:05:53.316"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${sort_address_by_main_asc}</arg>
+</arguments>
+<msg timestamp="20201013 18:05:53.327" level="INFO">Current page contains element 'css:div[data-testid='addresses-table'] [title='Sort by Main'] .fa-caret-up'.</msg>
+<status status="PASS" starttime="20201013 18:05:53.317" endtime="20201013 18:05:53.327"></status>
+</kw>
+<kw name="Verify Sorted Column is in Ascending Order" library="Common_Keywords">
+<arguments>
+<arg>${AddressesMainList}</arg>
+<arg>${Addresses_Main_Column}</arg>
+</arguments>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${AscAddressList}</var>
+</assign>
+<msg timestamp="20201013 18:05:53.330" level="INFO">${AscAddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:05:53.329" endtime="20201013 18:05:53.330"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{AscAddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:06:13.350" level="INFO">@{AscAddressLocators} = [ ]</msg>
+<status status="PASS" starttime="20201013 18:05:53.330" endtime="20201013 18:06:13.350"></status>
+</kw>
+<kw name="${locator} IN [ @{AscAddressLocators} ]" type="for">
+<status status="PASS" starttime="20201013 18:06:13.351" endtime="20201013 18:06:13.351"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+</arguments>
+<assign>
+<var>${AddressExpectedList}</var>
+</assign>
+<msg timestamp="20201013 18:06:13.352" level="INFO">${AddressExpectedList} = []</msg>
+<status status="PASS" starttime="20201013 18:06:13.351" endtime="20201013 18:06:13.352"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:06:13.352" endtime="20201013 18:06:13.352"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+<arg>${AscAddressList}</arg>
+<arg>ignore_order=False</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:06:13.352" endtime="20201013 18:06:13.353"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:05:53.328" endtime="20201013 18:06:13.353"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sort_address_by_main}</arg>
+</arguments>
+<msg timestamp="20201013 18:06:13.356" level="INFO">Clicking element 'css:div[data-testid='addresses-table'] [title='Sort by Main']'.</msg>
+<status status="PASS" starttime="20201013 18:06:13.354" endtime="20201013 18:06:13.624"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${list_of_addresses}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:06:13.624" endtime="20201013 18:06:13.675"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${sort_address_by_main_dsc}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:06:13.676" endtime="20201013 18:06:13.719"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${sort_address_by_main_dsc}</arg>
+</arguments>
+<msg timestamp="20201013 18:06:13.729" level="INFO">Current page contains element 'css:div[data-testid='addresses-table'] [title='Sort by Main'] .fa-caret-down'.</msg>
+<status status="PASS" starttime="20201013 18:06:13.720" endtime="20201013 18:06:13.729"></status>
+</kw>
+<kw name="Verify Sorted Column is in Descending Order" library="Common_Keywords">
+<arguments>
+<arg>${AddressesMainList}</arg>
+<arg>${Addresses_Main_Column}</arg>
+</arguments>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${DescAddressList}</var>
+</assign>
+<msg timestamp="20201013 18:06:13.732" level="INFO">${DescAddressList} = []</msg>
+<status status="PASS" starttime="20201013 18:06:13.732" endtime="20201013 18:06:13.732"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${AddressColumn}</arg>
+</arguments>
+<assign>
+<var>@{DescAddressLocators}</var>
+</assign>
+<msg timestamp="20201013 18:06:33.795" level="INFO">@{DescAddressLocators} = [ ]</msg>
+<status status="PASS" starttime="20201013 18:06:13.733" endtime="20201013 18:06:33.795"></status>
+</kw>
+<kw name="${locator} IN [ @{DescAddressLocators} ]" type="for">
+<status status="PASS" starttime="20201013 18:06:33.795" endtime="20201013 18:06:33.795"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${AddressList}</arg>
+</arguments>
+<assign>
+<var>${AddressExpectedList}</var>
+</assign>
+<msg timestamp="20201013 18:06:33.796" level="INFO">${AddressExpectedList} = []</msg>
+<status status="PASS" starttime="20201013 18:06:33.796" endtime="20201013 18:06:33.797"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:06:33.797" endtime="20201013 18:06:33.798"></status>
+</kw>
+<kw name="Reverse List" library="Collections">
+<doc>Reverses the given list in place.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:06:33.798" endtime="20201013 18:06:33.799"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${AddressExpectedList}</arg>
+<arg>${DescAddressList}</arg>
+<arg>ignore_order=False</arg>
+</arguments>
+<status status="PASS" starttime="20201013 18:06:33.799" endtime="20201013 18:06:33.800"></status>
+</kw>
+<status status="PASS" starttime="20201013 18:06:13.730" endtime="20201013 18:06:33.801"></status>
 </kw>
 <doc>As a user I can update address for customers</doc>
 <tags>
 <tag>Regression Test Suite</tag>
 </tags>
-<status status="FAIL" starttime="20201008 19:54:10.520" endtime="20201008 19:55:12.790" critical="yes">Element 'xpath=//h1[.='${Customer_Name}']' not visible after 20 seconds.</status>
+<status status="PASS" starttime="20201013 18:03:36.409" endtime="20201013 18:06:33.802" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20201008 19:54:09.842" endtime="20201008 19:55:12.794"></status>
+<status status="PASS" starttime="20201013 18:03:35.699" endtime="20201013 18:06:33.805"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1">Regression Test Suite</stat>
+<stat pass="1" fail="0">Regression Test Suite</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Customer Address Table">Customer Address Table</stat>
+<stat pass="1" fail="0" id="s1" name="Customer Address Table">Customer Address Table</stat>
 </suite>
 </statistics>
 <errors>
