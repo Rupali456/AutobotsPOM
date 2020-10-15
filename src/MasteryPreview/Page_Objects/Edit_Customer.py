@@ -25,8 +25,6 @@ Submit_Button = "xpath=//button[@class='css-10rxk89' and @type='submit']"
 # Customer Search Results Section :
 List_Of_Customer = "css:.css-1wtbph2"
 Search_Results_Link = "xpath=//div[@class='css-1wtbph2']//a"
-Customer_Searched_By_Name_Staging = f"xpath=//h1[.='{Customer_Name}']"
-
 Accounting_and_credit_Tab_Element = "xpath=//a[.='Accounting & Credit']"
 Maintainance_tab_element = "xpath=//a[.='Maintenance']"
 billing_detail_element = "xpath=//form[@data-testid='customer-accounting-form']"
@@ -189,6 +187,7 @@ Main_Checkbox = "xpath=//input[@name='main']//following-sibling::span"
 Save_Address_Element = "css:.css-1p16kem"
 Save_Customer_Button = "xpath=//button[@class='css-1p16kem' and .='Save Address']"
 Add_Customer_Button = "xpath=//button[@class='css-1p16kem' and .='Add Address']"
+Save_cust_Button = "xpath=//button[@class='css-10a4rg2']"
 
 Address_Type_Value = "Shipping"
 Address_Type_Value_TBS = f"xpath=//li[.='{Address_Type_Value}']"
@@ -299,3 +298,286 @@ ext_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='extens
 Email_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='emailAddress']"
 IM_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='chatTypeId']"
 Fax_Column = "xpath=//div[@data-testid='contacts-table']//div[@data-thid='faxNumber']"
+
+# Customer _identifier_Table
+# Identifiers Section:
+Add_Identifier_Button = "xpath=//div[@data-testid='identifiers-table']//button[@data-testid='table-add-new']"
+Add_Contact = "xpath=//button[@class='css-1p16kem']"
+identifier_system_type = "name=identifierTypeId"
+Identifier_Type_Value = "Revenova"
+Identifier_Edit_Type_Value = "DUNS"
+Identifier_Type_Value_TBS = f"xpath=//li[.='{Identifier_Type_Value}']"
+Identifier_Type_Edit_Value_TBS = f"xpath=//li[.='{Identifier_Edit_Type_Value}']"
+ID = "css:div.css-1s06r22 [name='code']"
+
+save_identifier_element = "xpath=//button[@class='css-1p16kem']"
+
+# Edit Identifier Section :
+Identifier_Menu_Button = "xpath=//div[@data-testid='table-tbody']//div[@data-cellheader='Menu']/button"
+Identifier_Edit_Type = "EDI"
+Identifier_Delete_Type = "Revenova"
+Delete_Identifier_Menu_Button = f"xpath=//div[@data-testid='table-tbody']//div[contains(text(),'{Identifier_Delete_Type}')]//parent::div/div[@data-cellheader='Menu']/button"
+Edit_Identifier_menu_button = f"xpath=//div[@data-testid='table-tbody']//div[contains(text(),'{Identifier_Edit_Type}')]//parent::div/div[@data-cellheader='Menu']/button"
+
+# sorting
+List_Of_Identifiers = "css:div[data-testid='identifiers-table'] .css-1wt5hjw"
+Sort_identifiers_by_system = "css:div[data-testid='identifiers-table'] [title='Sort by System']"
+Sort_identifiers_By_system_ASC = "css:div[data-testid='identifiers-table'] [title='Sort by System'] .fa-caret-up"
+Sort_identifiers_By_system_DSC = "css:div[data-testid='identifiers-table'] [title='Sort by System'] .fa-caret-down"
+
+Sort_identifiers_by_id = "css:div[data-testid='identifiers-table'] [title='Sort by ID']"
+Sort_identifiers_By_id_ASC = "css:div[data-testid='identifiers-table'] [title='Sort by ID'] .fa-caret-up"
+Sort_identifiers_By_id_DSC = "css:div[data-testid='identifiers-table'] [title='Sort by ID'] .fa-caret-down"
+
+System_Column = "xpath=//div[@data-testid='identifiers-table']//div[@data-thid='identifierTypeId']"
+ID_Column = "xpath=//div[@data-testid='identifiers-table']//div[@data-thid='code']"
+
+# Rate_Quote
+#Rate Quote Section:
+Rate_Quote_Tab = "xpath=//a[.='Rate Quote']"
+Origin_Element = "xpath=//div[@id='origin-text']//input"
+Destination_Element = "xpath=//div[@id='destination-text']//input"
+Equipment_Element = "xpath=//div[@name='trailerType']//button"
+Eff_Date_Element = "name=effectiveDate"
+Quote_Type_Element = "xpath=//div[@name='quoteType']//button"
+Size_Element = "xpath=//div[@name='loadSize']//button"
+Notes_Element = "xpath=//textarea[@name='notes']"
+
+Rate_Line_Table = "xpath=//div[@data-testid='customer-rate-quote-line-items-list']"
+Add_Rate_Line_Button = "xpath=//div[@data-testid='customer-rate-quote-line-items-list']//button[@data-testid='table-add-new']"
+Add_Rate_Line_Item_PopUp = "xpath=//div[@role='dialog']"
+Total_Rate_Column = "xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Total Rate']"
+Add_Quote_Button = "xpath=//button[@data-testid='customer-add-rate-quote-button' and .='Add Quote']"
+Clear_Button = "xpath=//button[.='Clear']"
+
+#Add New Rate Line Item Fields:
+Rate_Line_Type_Element = "xpath=//div[@role='dialog']//div[@name='chargeTypeId']//button"
+Rate_Per_Unit_Element = "xpath=//input[@id='rate-field']"
+Units_Element = "xpath=//input[@id='units-field']"
+Add_Rate_Line_Item_Button = "xpath=//button[.='Add Rate Line Item']"
+Save_Rate_Line_Item_Button = "xpath=//button[.='Save Rate Line Item']"
+Total_Rate_Value = "xpath=//span[.='Total Rate:']//following-sibling::span"
+List_Of_Quotes = "xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@class='css-1afe8lq']"
+
+#Step - 1: Values
+Origin_Value_Chicago = "Chicago, IL"
+Destination_Value_Dallas = "Dallas, TX"
+Origin_Value_Chicago_TBS = f"xpath=//li[.='{Origin_Value_Chicago}']"
+Destination_Value_Dallas_TBS = f"xpath=//li[.='{Destination_Value_Dallas}']"
+Origin_Chicago_City_From_Quotes = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Origin' and @title='{Origin_Value_Chicago}']"
+Destination_Dallas_City_From_Quotes = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Destination' and @title='{Destination_Value_Dallas}']"
+
+Rate_Line_Type_Fuel_Surcharge = "Fuel Surcharge"
+Select_Rate_Line_Type_Fuel_Surcharge = f"xpath=//li[.='{Rate_Line_Type_Fuel_Surcharge}']"
+Rate_Line_Fuel_Surcharge = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Fuel_Surcharge}')]"
+
+#Step - 2: Values
+Rate_Line_Type_Special_Charge = "Special Charge"
+Select_Rate_Line_Type_Special_Charge = f"xpath=//li[.='{Rate_Line_Type_Special_Charge}']"
+Rate_Line_Special_Charge = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Special_Charge}')]"
+
+#Step - 3: Values
+Rate_Line_Type_High_Cargo_Value = "High Cargo Value"
+Select_Rate_Line_Type_High_Cargo_Value = f"xpath=//li[.='{Rate_Line_Type_High_Cargo_Value}']"
+Rate_Line_High_Cargo_Value = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_High_Cargo_Value}')]"
+
+#Step - 4: Values
+Rate_Line_Type_Lift_Gate = "Lift Gate"
+Select_Rate_Line_Type_Lift_Gate = f"xpath=//li[.='{Rate_Line_Type_Lift_Gate}']"
+Rate_Line_Lift_Gate = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Lift_Gate}')]"
+
+#Step - 5: Values
+Rate_Line_Type_Linehaul = "Linehaul"
+Select_Rate_Line_Type_Linehaul = f"xpath=//li[.='{Rate_Line_Type_Linehaul}']"
+Rate_Line_Linehaul = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Linehaul}')]"
+
+#Step - 6: Values
+Origin_Value_Atlanta = "Atlanta, GA"
+Origin_Value_Atlanta_TBS = f"xpath=//li[.='{Origin_Value_Atlanta}']"
+Destination_Value_Memphis = "Memphis, TN"
+Destination_Value_Memphis_TBS = f"xpath=//li[.='{Destination_Value_Memphis}']"
+
+Origin_Atlanta_City_From_Quotes = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Origin' and @title='{Origin_Value_Atlanta}']"
+Destination_Memphis_City_From_Quotes = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Destination' and @title='{Destination_Value_Memphis}']"
+
+Rate_Line_Type_Flat_Rate = "Flat Rate"
+Select_Rate_Line_Type_Flat_Rate = f"xpath=//li[.='{Rate_Line_Type_Flat_Rate}']"
+Rate_Line_Flat_Rate = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Flat_Rate}')]"
+
+#Step - 7: Values
+Rate_Line_Type_Tanker_Endorsement = "Tanker Endorsement"
+Select_Rate_Line_Type_Tanker_Endorsement = f"xpath=//li[.='{Rate_Line_Type_Tanker_Endorsement}']"
+Rate_Line_Tanker_Endorsement = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Tanker_Endorsement}')]"
+
+#Step - 8: Values
+Rate_Line_Type_Over_Dimensional = "Over Dimensional"
+Select_Rate_Line_Type_Over_Dimensional = f"xpath=//li[.='{Rate_Line_Type_Over_Dimensional}']"
+Rate_Line_Over_Dimensional = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Over_Dimensional}')]"
+
+#Step - 9: Values
+Rate_Line_Type_White_Glove = "White Glove"
+Select_Rate_Line_Type_White_Glove = f"xpath=//li[.='{Rate_Line_Type_White_Glove}']"
+Rate_Line_White_Glove = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_White_Glove}')]"
+
+#Step - 10: Values
+Rate_Line_Type_Detention_Loading = "Detention Loading"
+Select_Rate_Line_Type_Detention_Loading = f"xpath=//li[.='{Rate_Line_Type_Detention_Loading}']"
+Rate_Line_Detention_Loading = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Detention_Loading}')]"
+
+#Step - 11: Values
+Rate_Line_Type_Detention_Unloading = "Detention Unloading"
+Select_Rate_Line_Type_Detention_Unloading = f"xpath=//li[.='{Rate_Line_Type_Detention_Unloading}']"
+Rate_Line_Detention_Unloading = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Detention_Unloading}')]"
+
+#Step - 12: Values
+Origin_Value_Phoenix = "Phoenix, AZ"
+Destination_Value_LosAngeles = "Los Angeles, CA"
+Origin_Value_Phoenix_TBS = f"xpath=//li[.='{Origin_Value_Phoenix}']"
+Destination_Value_LosAngeles_TBS = f"xpath=//li[.='{Destination_Value_LosAngeles}']"
+
+Origin_Phoenix_City_From_Quotes = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Origin' and @title='{Origin_Value_Phoenix}']"
+Destination_LosAngeles_City_From_Quotes = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Destination' and @title='{Destination_Value_LosAngeles}']"
+
+Rate_Line_Type_Line_Haul = "Linehaul"
+Select_Rate_Line_Type_Line_Haul = f"xpath=//li[.='{Rate_Line_Type_Line_Haul}']"
+Rate_Line_Line_Haul = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Line_Haul}')]"
+
+#Step - 13: Values
+Rate_Line_Type_Blind_Shipmemt = "Blind Shipment"
+Select_Rate_Line_Type_Blind_Shipmemt = f"xpath=//li[.='{Rate_Line_Type_Blind_Shipmemt}']"
+Rate_Line_Blind_Shipmemt = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Blind_Shipmemt}')]"
+
+#Step - 14: Values
+Rate_Line_Type_Bonded_Carrier = "Bonded Carrier"
+Select_Rate_Line_Type_Bonded_Carrier = f"xpath=//li[.='{Rate_Line_Type_Bonded_Carrier}']"
+Rate_Line_Bonded_Carrier = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Bonded_Carrier}')]"
+
+#Step - 15: Values
+Rate_Line_Type_Border_Crossing = "Border Crossing"
+Select_Rate_Line_Type_Border_Crossing = f"xpath=//li[.='{Rate_Line_Type_Border_Crossing}']"
+Rate_Line_Border_Crossing = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Border_Crossing}')]"
+
+#Step - 16: Values
+Rate_Line_Type_Customs_Fees = "Customs Fees"
+Select_Rate_Line_Type_Customs_Fees = f"xpath=//li[.='{Rate_Line_Type_Customs_Fees}']"
+Rate_Line_Customs_Fees = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Customs_Fees}')]"
+
+#Step - 17: Values
+Rate_Line_Type_Driver_Assist = "Driver Assist"
+Select_Rate_Line_Type_Driver_Assist = f"xpath=//li[.='{Rate_Line_Type_Driver_Assist}']"
+Rate_Line_Driver_Assist = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Driver_Assist}')]"
+
+#Step - 18: Values
+Rate_Line_Type_Guaranteed_Service = "Guaranteed Service"
+Select_Rate_Line_Type_Guaranteed_Service = f"xpath=//li[.='{Rate_Line_Type_Guaranteed_Service}']"
+Rate_Line_Guaranteed_Service = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Guaranteed_Service}')]"
+
+#Step - 19: Values
+Origin_Value_Dallas = "Dallas, TX"
+Destination_Value_ElPaso = "El Paso, TX"
+Origin_Value_Dallas_TBS = f"xpath=//li[.='{Origin_Value_Dallas}']"
+Destination_Value_ElPaso_TBS = f"xpath=//li[.='{Destination_Value_ElPaso}']"
+
+Origin_Dallas_City_From_Quotes = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Origin' and @title='{Origin_Value_Dallas}']"
+Destination_ElPaso_City_From_Quotes = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Destination' and @title='{Destination_Value_ElPaso}']"
+
+#Step - 20: Values
+Rate_Line_Type_Limited_Access = "Limited Access"
+Select_Rate_Line_Type_Limited_Access = f"xpath=//li[.='{Rate_Line_Type_Limited_Access}']"
+Rate_Line_Limited_Access = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Limited_Access}')]"
+
+#Step - 23: Values
+Origin_Value_Laredo = "Laredo, TX"
+Destination_Value_Seattle = "Seattle, WA"
+Origin_Value_Laredo_TBS = f"xpath=//li[.='{Origin_Value_Laredo}']"
+Destination_Value_Seattle_TBS = f"xpath=//li[.='{Destination_Value_Seattle}']"
+
+Origin_Laredo_City_From_Quotes = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Origin' and @title='{Origin_Value_Laredo}']"
+Destination_Seattle_City_From_Quotes = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Destination' and @title='{Destination_Value_Seattle}']"
+
+Rate_Line_Type_Per_Mile = "Per Mile"
+Select_Rate_Line_Type_Per_Mile = f"xpath=//li[.='{Rate_Line_Type_Per_Mile}']"
+Rate_Line_Per_Mile = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Per_Mile}')]"
+
+#Step - 24: Values
+Rate_Line_Type_Team_Service = "Team Service"
+Select_Rate_Line_Type_Team_Service = f"xpath=//li[.='{Rate_Line_Type_Team_Service}']"
+Rate_Line_Team_Service = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[@data-cellheader='Rate Type' and contains(text(),'{Rate_Line_Type_Team_Service}')]"
+
+#Step - 26: Values
+Equipment_Value_Reefer = "Reefer"
+Select_Equipment_Value = f"xpath=//li[.='{Equipment_Value_Reefer}']"
+Quote_Type_Value =   "Committed"
+Select_Quote_Type_Value = f"xpath=//li[.='{Quote_Type_Value}']"
+Size_Value =  "LTL"
+Select_Size_Value = f"xpath=//li[.='{Size_Value}']"
+
+#Step - 29: Values
+LineHaul_Menu_Options = f"xpath=//div[@data-testid='customer-rate-quote-line-items-list']//div[contains(text(),'Linehaul')]//parent::div/div[@data-cellheader='Menu']/button"
+
+#Step - 33: Values
+Quote_Delete_Type = "Chicago"
+Delete_Quote_Menu_Button = f"xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[contains(text(),'{Quote_Delete_Type}')]//parent::div/div[@data-cellheader='Menu']/button"
+Quote_Menu_Button = "xpath=//div[@data-testid='customer-rate-quote-new-quotes-list']//div[@data-cellheader='Menu']/button"
+
+#Step - 35,36: Search existing quote from Chicago to Dallas
+Existing_Quotes_Table = "xpath=//div[@data-testid='customer-rate-quote-existing-quotes-list']"
+Search_Button_Existing_Quote = "xpath=//div[@data-testid='customer-rate-quote-existing-quotes-list']//button[.='Search']"
+Existing_Quote_List = f"xpath=//div[@data-testid='customer-rate-quote-existing-quotes-list']//div[@data-cellheader='Origin' and @title='{Origin_Value_Chicago}']//following-sibling::div[@data-cellheader='Destination' and @title='{Destination_Value_Dallas}']"
+
+#Step - 37: Click checkbox for search
+Only_This_Customer_Checkbox = "id=only-current-customer"
+QuotedBy_Element = "xpath=//div[@name='quotedBy']//button"
+
+#Step - 38: Click checkbox for expired
+Expired_Checkbox = "id=exp"
+
+#Step - 44: Edit existing quote
+Origin_Value_Existing_Quote = "xpath=//div[@class='css-4dqsbf']/div[@data-cellheader='Origin' and @title='Chicago, IL']"
+Destination_Value_Existing_Quote = "xpath=//div[@class='css-4dqsbf']/div[@data-cellheader='Destination' and @title='Dallas, TX']"
+
+#Step-48: ODH 100
+ODH_Element = "xpath=//input[@id='ODH']"
+DDH_Element = "xpath=//input[@id='DDH']"
+No_Existing_Quotes_Text = "xpath=//span[.='No Existing Quotes']"
+
+# Customer Reps Table
+add_rep = "Nathan Connor"
+edit_rep = "Hannah Truesdale"
+Customer_Searched_By_Name_Staging = f"xpath=//h1[.='{Customer_Name}']"
+Maintenance_Tab_Element = "xpath=//a[.='Maintenance']"
+
+# Reps Section
+Add_Reps_Button = "xpath=//div[@data-testid='reps-table']//button[@class='css-1y4ltxc']"
+Reps_Type_Value = "Customer Sales"
+Reps_Edit_Type_Value = "Issue Resolution"
+reps_type_element = "name=repType.id"
+Reps_Type_Value_TBS = f"xpath=//li[.='{Reps_Type_Value}']"
+Reps_Type_Edit_Value_TBS = f"xpath=//li[.='{Reps_Edit_Type_Value}']"
+Reps_Name_DD = "xpath=//li[@class='css-1lumcud']"
+
+add_new_rep = "name=employee.name"
+SuggestBox = f"xpath=//ul/li[@role='option']/strong[contains(.,'{add_rep}')]"
+
+Save_Reps_Element = "xpath=//button[@class='css-1p16kem']"
+Save_Reps_Button = "xpath=//button[@class='css-10a4rg2']"
+Reps_Menu_Button = "xpath=//div[@data-testid='reps-table']//div[@data-cellheader='Menu']/button"
+Reps_Edit_Type = "Customer Sales"
+Reps_Delete_Type = "Issue Resolution"
+Delete_Reps_Menu_Button = f"xpath=//div[@data-testid='reps-table']//div[contains(text(),'{Reps_Delete_Type}')]//parent::div/div[@data-cellheader='Menu']/button"
+Edit_Reps_menu_button = f"xpath=//div[@data-testid='reps-table']//div[contains(text(),'{Reps_Edit_Type}')]//parent::div/div[@data-cellheader='Menu']/button"
+
+List_Of_Reps = "css:div[data-testid='reps-table'] .css-hun3g"
+Sort_Reps_By_Type = "css:div[data-testid='reps-table'] [title='Sort by Type']"
+Sort_Reps_By_Type_ASC = "css:div[data-testid='reps-table'] [title='Sort by Type'] .fa-caret-up"
+Sort_Reps_By_Type_DSC = "css:div[data-testid='reps-table'] [title='Sort by Type'] .fa-caret-down"
+Sort_Reps = "css:div[data-testid='reps-table'] [title='Sort by Rep']"
+Sort_Reps_By_Reps_ASC = "css:div[data-testid='reps-table'] [title='Sort by Rep'] .fa-caret-up"
+Sort_Reps_By_Reps_DSC = "css:div[data-testid='reps-table'] [title='Sort by Rep'] .fa-caret-down"
+Sort_Reps_by_main = "css:div[data-testid='reps-table'] [title='Sort by Main']"
+Sort_Reps_By_main_ASC = "css:div[data-testid='reps-table'] [title='Sort by Main'] .fa-caret-up"
+Sort_Reps_By_main_DSC = "css:div[data-testid='reps-table'] [title='Sort by Main'] .fa-caret-down"
+
+Reps_Type_Column = "xpath=//div[@data-testid='reps-table']//div[@data-thid='Type']"
+Reps_Column = "path=//div[@data-testid='reps-table']//div[@data-thid='Rep']"
+Reps_Main_Column = "xpath=//div[@data-testid='reps-table']//div[@data-thid='main']"
