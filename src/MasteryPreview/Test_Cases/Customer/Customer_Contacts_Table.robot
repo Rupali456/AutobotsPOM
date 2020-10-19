@@ -1,5 +1,5 @@
 *** Settings ***
-#Test Teardown     Close Browser
+Test Teardown     Close Browser
 Library           SeleniumLibrary
 Library           String
 Library           Collections
@@ -47,12 +47,7 @@ Add Edit and Delete Contact from Contacts Table for customer
 
   #Edit contact
   Edit Menu Item  ${edit_contact_menu_button}
-
-  ${ContactNameValue}=  get element attribute  ${contact_name_element}  value
-  ${ContactName_value_backspaces_count}=    Get Length      ${ContactNameValue}
-  Run Keyword If    """${ContactNameValue}""" != ''
-  ...     Repeat Keyword  ${ContactName_value_backspaces_count}  Press Keys  ${contact_name_element}   \ue003
-
+  erase existing values   ${contact_name_element}
   input text  ${contact_name_element}  ${Edit_Contact_Value}
   click element  ${contact_type_element}
   click element  ${Edit_Contact_Type_TBS}

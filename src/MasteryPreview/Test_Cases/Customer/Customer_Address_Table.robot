@@ -31,34 +31,18 @@ Add Edit and Delete Addresses from Address Table for Customer
   wait until element is visible  ${edit_address_type_value_tbs}
   click element  ${edit_address_type_value_tbs}
 
-  ${street1Value}=  get element attribute  ${street_address_element}  value
-  ${street1_value_backspaces_count}=    Get Length      ${street1Value}
-  Run Keyword If    """${street1Value}""" != ''
-  ...     Repeat Keyword  ${street1_value_backspaces_count}  Press Keys  ${street_address_element}   \ue003
-
+  Erase existing values  ${street_address_element}
   Input Text    ${street_address_element}   ${edit_street_address}
 
-  ${street2Value}=  get element attribute  ${street_address2_element}  value
-  ${street2_value_backspaces_count}=    Get Length      ${street2Value}
-  Run Keyword If    """${street2Value}""" != ''
-  ...     Repeat Keyword  ${street2_value_backspaces_count}  Press Keys  ${street_address2_element}   \ue003
-
+  Erase existing values  ${street_address2_element}
   Input Text    ${street_address2_element}  ${edit_street_address2}
 
-  ${cityValue}=  get element attribute  ${Edit_City_Element}  value
-  ${city_value_backspaces_count}=    Get Length      ${cityValue}
-  Run Keyword If    """${cityValue}""" != ''
-  ...     Repeat Keyword  ${city_value_backspaces_count}  Press Keys  ${Edit_City_Element}   \ue003
-
+  Erase existing values  ${Edit_City_Element}
   input text    ${Edit_City_Element}  ${edit_city}
   wait until element is visible  ${edit_city_tbs}
   click element  ${edit_city_tbs}
 
-  ${PostCodeValue}=  get element attribute  ${postCode_element}  value
-  ${PostCode_value_backspaces_count}=    Get Length      ${PostCodeValue}
-  Run Keyword If    """${PostCodeValue}""" != ''
-  ...     Repeat Keyword  ${PostCode_value_backspaces_count}  Press Keys  ${postCode_element}   \ue003
-
+  Erase existing values  ${postCode_element}
   Input Text    ${postCode_element}  ${edit_postcode}
 
   click element  ${country_element}

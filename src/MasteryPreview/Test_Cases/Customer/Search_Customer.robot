@@ -1,5 +1,5 @@
 *** Settings ***
-#Test Teardown     Close Browser
+Test Teardown     Close Browser
 Library  SeleniumLibrary
 Resource  ../../Keywords/Login_Keywords.robot
 Resource  ../../Keywords/Search_Customer_Keywords.robot

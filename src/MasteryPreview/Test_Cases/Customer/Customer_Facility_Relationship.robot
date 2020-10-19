@@ -1,5 +1,5 @@
 *** Settings ***
-#Test Teardown     Close Browser
+Test Teardown     Close Browser
 Library  SeleniumLibrary
 Library  String
 Library  Collections

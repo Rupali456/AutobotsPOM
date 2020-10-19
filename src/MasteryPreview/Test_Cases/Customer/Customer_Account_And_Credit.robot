@@ -32,15 +32,8 @@ Customer's Accounting & Credit information
     click element  ${billing_address_element}
     wait until element is visible  ${select_billing_address_value}
     click element  ${select_billing_address_value}
-    Save Customer
 
     #Select Payment Terms:
-    click element  ${payment_terms_element}
-    wait until element is visible  ${select_net20_value}
-    click element  ${select_net20_value}
-    Save Customer
-    page should contain element  ${verify_net20_value}
-
     click element  ${payment_terms_element}
     wait until element is visible  ${select_net30_value}
     click element  ${select_net30_value}
@@ -48,7 +41,12 @@ Customer's Accounting & Credit information
     page should contain element  ${verify_net30_value}
 
     click element  ${payment_terms_element}
-    wait until element is visible  ${select_net45_value}
+    wait until element is visible  ${select_net20_value}
+    click element  ${select_net20_value}
+    Save Customer
+    page should contain element  ${verify_net20_value}
+
+
     click element  ${select_net45_value}
     Save Customer
     page should contain element  ${verify_net45_value}
@@ -259,10 +257,7 @@ Customer's Accounting & Credit information
     page should not contain element  ${Parent_Value}
 
     #Clear Billing mail field
-    ${emailValue}=  get element attribute  ${billing_email_element}  value
-    ${email_backspaces_count}=  get length  ${emailValue}
-    Run Keyword If    """${emailValue}""" != ''
-    ...     Repeat Keyword  ${email_backspaces_count}  Press Keys  ${billing_email_element}   \ue003
+    Erase existing values  ${billing_email_element}
     page should not contain element  ${billing_email_value}
 
     #Remove note

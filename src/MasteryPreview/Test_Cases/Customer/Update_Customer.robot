@@ -83,7 +83,6 @@ Update Customer Details
     Save Search Customer
     Verify Liability
 
-
     Erase existing values  ${liability_element}
     input text  ${liability_element}  ${zero_value}
     Save Search Customer
