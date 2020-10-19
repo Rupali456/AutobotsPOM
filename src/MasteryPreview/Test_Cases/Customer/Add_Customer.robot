@@ -7,6 +7,7 @@ Resource  ../../Keywords/Add_Customer_Keywords.robot
 Variables    ../../Page_Objects/Add_Customer.py
 Variables    ../../Page_Objects/Common_Locators.py
 Variables    ../../Data/Add_Customer_Data.py
+Variables   ../../Resourses/ConfigVariables.py
 
 *** Variables ***
 *** Keywords ***
@@ -19,9 +20,7 @@ Test Case To Add Customer
 
     #Below line added only to view the Test case Flow properly. As per your requirement you can change time to wait after each step.set selenium speed
     set selenium speed  0.15 seconds
-
-    click element       ${select_cust}
-    click element       ${Select_Tab_FromCust}
+    Search Customer
 
     #General Info:
     wait until element is visible  ${Name_Element}

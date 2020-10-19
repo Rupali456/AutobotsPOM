@@ -4,10 +4,9 @@ Library           SeleniumLibrary
 Library    robot.libraries.DateTime
 Resource  ../../Keywords/Login_Keywords.robot
 Resource  ../../Keywords/Common_Keywords.robot
-Resource  ../../Keywords/Edit_Customer_Keywords.robot
-Variables    ../../Page_Objects/Edit_Customer.py
-Variables    ../../Page_Objects/Customer_Locators.py
-Variables    ../../Data/Customer_Data.py
+Resource  ../../Keywords/Search_Customer_Keywords.robot
+Variables    ../../Page_Objects/Search_Customer.py
+Variables    ../../Data/Search_Customer_Data.py
 
 *** Variables ***
 *** Keywords ***
@@ -21,19 +20,9 @@ Customer's Accounting & Credit information
     #Below line added only to view the Test case Flow properly. As per your requirement you can change time to wait after each step.set selenium speed
     set selenium speed  0.1 seconds
 
-    wait until element is visible  ${header_customer_element}
-    click element  ${header_customer_element}
-    page should contain element  ${search_customer_element}
-    click element  ${search_customer_element}
-    wait until page contains  ${search_customer_text}
-    page should contain  ${search_customer_text}
-
-    #Customer Search by Name :
-    input text    ${Customer_name_element}   ${Customer_Name}
-    wait until element is enabled  ${submit_button}
-    click element  ${Submit_Button}
-    wait until element is visible  ${list_of_Customer}
-    click element  ${search_results_link}
+    #Customer Search by Name
+    Search customer
+    Search with customer name
 
     wait until element is visible  ${customer_searched_by_name_staging}
     wait until element is visible  ${accounting_and_credit_tab_element}
@@ -257,7 +246,7 @@ Customer's Accounting & Credit information
     wait until element is visible  ${select_parent_value}
     click element  ${select_parent_value}
     Click Element  ${select_parent_credit}
-    wait until element is enabled  ${save_customer_button}
+    wait until element is enabled  ${customer_Save_button}
     Save Customer
     page should contain element   ${verify_parent_value}
 

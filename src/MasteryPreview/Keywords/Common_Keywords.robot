@@ -75,6 +75,20 @@ Delete Menu Item
     click element  xpath=//reach-portal//div//div[@aria-labelledby='${idValue}']//div[contains(text(),'Delete')]
     handle alert  ACCEPT
 
+Sort ASC
+     [Arguments]  ${Sort_By_Type}  ${List_tobe_Sort}  ${Sort_ASC}
+     click element  ${Sort_By_Type}
+     wait until element is visible  ${List_tobe_Sort}
+     wait until element is visible  ${Sort_ASC}
+     page should contain element  ${Sort_ASC}
+
+Sort DSC
+     [Arguments]  ${Sort_By_Type}  ${List_tobe_Sort}  ${Sort_DSC}
+     click element  ${Sort_By_Type}
+     wait until element is visible  ${List_tobe_Sort}
+     wait until element is visible  ${Sort_DSC}
+     page should contain element  ${Sort_DSC}
+
 Check checkbox
     [Arguments]  ${Checkbox_Element}
     ${Is_Checkbox_Selected}=    Run Keyword And Return Status    checkbox should not be selected  ${Checkbox_Element}
